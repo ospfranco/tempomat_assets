@@ -9,31 +9,33 @@ import background2 from '../images/background2.jpg'
 import circleci from '../images/circleci_dark.png'
 import appcenter from '../images/appcenter_dark.png'
 import macButton from '../images/DownloadMac.svg'
+import logo from '../images/title.png';
+import icon from '../images/Icon.png';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div style={{display: `flex`}}>
+    <div style={{display: `flex`, flexWrap: "wrap", margin: `0 auto`, flex: 1, alignItems: 'center', justifyContent: 'center', marginBottom: 60}}>
       <img src={background} style={{height: '40vh'}}/>
-      <div style={{display: `flex`, justifyContent: `center`, alignItems: `center`, flex: 1}}>
+      <div style={{display: `flex`, flexDirection: `column`, justifyContent: `center`, alignItems: `center`, flex: 1, minWidth: '320px',}}>
+        <img src={icon} style={{width: 100}}/>
+        <img src={logo} style={{width: 150}}/>
         <h1 style={{fontWeight: 200}}>Build status at a glance.</h1>
       </div>
-      
     </div>
-    <div style={{display: `flex`, flexWrap: "wrap", margin: `0 auto`, flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <div style={{display: `flex`, flexDirection: 'column', justifyContent: `center`, alignItems: `center`, flex: 1, minWidth: '375px', padding: 10}}>
-        <h3 style={{fontWeight: 200 }}>Sits on your desktop menu bar</h3>
-        <h3 style={{fontWeight: 200 }}>Notifies you when a build breaks</h3>
-        <h3 style={{fontWeight: 200 }}>Easy set up and integration</h3>
-        <h3 style={{fontWeight: 200 }}>Trigger a rebuild with a single click</h3>
+    <div style={{display: `flex`, flexWrap: "wrap", margin: `0 auto`, flex: 1, alignItems: 'center', justifyContent: 'center', marginBottom: 60}}>
+      <div style={{display: `flex`, flexDirection: 'column', justifyContent: `center`, alignItems: `center`, flex: 1, minWidth: '320px', padding: 10}}>
+        <h2 style={{fontWeight: 200 }}>Sits on your desktop menu bar.</h2>
+        <h2 style={{fontWeight: 200 }}>Notifies you when a build breaks.</h2>
+        <h2 style={{fontWeight: 200 }}>Easy set up and integration.</h2>
+        <h2 style={{fontWeight: 200 }}>Trigger a rebuild with a single click.</h2>
       </div>
 
-      <img src={background2} style={{height: '40vh'}}/>
-      
+      <img src={background2} style={{height: '30vh', borderRadius: 10}}/>
     </div>
 
     <div style={{display: `flex`, flexDirection: `column`, margin: `0 auto`, flex: 1, alignItems: 'center', padding: 10}}>
-      <h3 style={{fontWeight: 200 }}>Multiple CI providers supported</h3>
+      <h2 style={{fontWeight: 200 }}>Multiple CI providers supported</h2>
       <div style={{display: `flex`, justifyContent: `center`, alignItems: `center`, flex: 1, justifyContent: `space-around`, width: '300px'}}>
         <div style={{display: `flex`, flexDirection: `column`, alignItems: 'center' }}>
         
