@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Tempomat`,
-    description: `CI Monitoring for macOS`,
-    author: `@ospfranco`,
+    description: `Native macOS app for monitoring continuous integration systems`,
+    siteUrl: `https://tempomat.dev`,
+    author: `Oscar Franco`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,9 +27,6 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    }
   ],
 }

@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { Title } from "./title"
@@ -28,7 +27,7 @@ const Header = () => (
       <div style={{flex: 1}}/>
       
       <a href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12" alt="Mac app store link">
-        <img src={macButton} style={{marginBottom: 0}}/>
+        <img src={macButton} style={{marginBottom: 0, width: 200}}/>
       </a>
     </div>
   </header>
