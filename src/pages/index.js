@@ -9,6 +9,7 @@ import circleci from '../images/circleci_dark.png'
 import appcenter from '../images/appcenter_dark.png'
 import bitrise from '../images/bitrise_dark.png'
 import travis from '../images/travis_dark.png'
+import github from '../images/github_dark.png'
 import macButton from '../images/DownloadMac.svg'
 import logo from '../images/title.png';
 import icon from '../images/Icon.png';
@@ -24,7 +25,7 @@ const IndexPage = () => (
         <img src={icon} style={{width: 100}} alt=""/>
         <img src={logo} style={{width: 150}} alt=""/>
         <h1 style={{fontWeight: 200, textAlign: 'center', marginTop: 40}}>Native macOS app for monitoring continuous integration systems</h1>
-        <div style={{display: `flex`, justifyContent: `center`, alignItems: `center`, flex: 1, justifyContent: `space-around`, width: '400px', marginBottom: 40}}>
+        <div style={{display: `flex`, justifyContent: `center`, alignItems: `center`, flex: 1, justifyContent: `space-around`, width: '500px', marginBottom: 40}}>
           <div style={{display: `flex`, flexDirection: `column`, alignItems: 'center' }}>
             <img src={appcenter} alt="appcenter icon" style={{width: 50}}/>
             <h4 style={{fontWeight: 300 }}>AppCenter</h4>
@@ -38,8 +39,12 @@ const IndexPage = () => (
             <h4 style={{fontWeight: 300 }}>Bitrise</h4>
           </div>
           <div style={{display: `flex`, flexDirection: `column`, alignItems: 'center'}}>
-            <img src={travis} alt="bitrise icon" style={{width: 50}}/>
+            <img src={travis} alt="travis icon" style={{width: 50}}/>
             <h4 style={{fontWeight: 300 }}>Travis CI</h4>
+          </div>
+          <div style={{display: `flex`, flexDirection: `column`, alignItems: 'center'}}>
+            <img src={github} alt="github icon" style={{width: 50}}/>
+            <h4 style={{fontWeight: 300 }}>Github Actions</h4>
           </div>
         </div>
 
