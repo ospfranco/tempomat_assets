@@ -620,7 +620,7 @@ pre tt:after {
   margin-top: 40px;
   margin-bottom: 80px;
   position: relative;
-  background-color: black;
+  /* background-color: black; */
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   /* margin: 0 auto 2rem; */
@@ -638,9 +638,9 @@ pre tt:after {
   left: -10%;
   right: -10%;
   height: 25px;
-  background-color: #9aa7b4;
+  /* background-color: #9aa7b4; */
   border-width: 1px;
-  border-color: gray;
+  border-color: black;
   border-bottom-left-radius: 30%;
   border-bottom-right-radius: 30%;
   border-style: solid;

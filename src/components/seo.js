@@ -75,7 +75,7 @@ function SEO({ description, lang, meta, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: `Continuous Integration monitoring in the macOS menu bar`,
 }
 
 SEO.propTypes = {
