@@ -34,21 +34,25 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
       </div>
-      <footer>
-        
+      <footer
+        style={{
+          backgroundColor: '#313131'
+        }}
+      >
         <div
           style={{
             margin: `0 auto`,
             maxWidth: 960,
-            padding: `1.45rem 1.0875rem`,
             display: `flex`,
+            flexDirection: `column`,
+            alignItems: 'center',
             justifyContent: `center`,
           }}
         >          
-          <Link to="privacy" alt="Privacy Link">
+          <Link to="/privacy" alt="Privacy Link" style={{color: 'white', textDecoration: 'none', padding: 20}}>
             Privacy Policy
           </Link>
-          <Link to="/support" alt="Support Link" style={{marginLeft: 10}}>
+          <Link to="/support" alt="Support Link" style={{color: 'white', textDecoration: 'none', padding: 20}}>
             Support
           </Link>
         </div>
