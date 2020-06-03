@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Privacy Policy" />
+    <SEO title="Create a Github Personal Token for Tempomat" />
 
     <h1>Github Token Guide</h1>
 
