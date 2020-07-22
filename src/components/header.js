@@ -2,33 +2,41 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Title } from "./title"
 import macButton from '../images/DownloadMac.svg'
-import githubMark from '../images/githubMark.png'
 
 const Header = () => (
-  <header
-    style={{
-      background: `#313131`,
-      marginBottom: `1.45rem`,
-      backdropFilter: `blur(5px)`
-    }}
-  >
+  <header>
+    <div
+      style={{
+        // background: `red`,
+        background: 'linear-gradient(150deg,#05BEA4 15%,#94EE7E 94%)',
+        height: '500px',
+        transform: 'skewY(-12deg)',
+        'transform-origin': 0,
+        position: `absolute`,
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: -1
+      }}
+    />
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
         display: `flex`,
         alignItems: `center`,
+        justifyContent: `space-between`,
       }}
     >
-      <div style={{width: 100}}>
+      <div style={{width: 180}}>
         <Title />
       </div>
 
-      <div style={{flex: 1}}/>
-      <a href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12" alt="Mac app store link">
-        <img src={macButton} style={{marginBottom: 0, width: 200}}/>
-      </a>
+      <div>
+        <a href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12" alt="Mac app store link">
+          <img src={macButton} style={{marginBottom: 0, width: 200}}/>
+        </a>
+      </div>
     </div>
   </header>
 )
