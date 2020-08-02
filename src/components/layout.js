@@ -44,7 +44,6 @@ const Layout = ({ children }) => {
             margin: `0 auto`,
             maxWidth: 960,
             display: `flex`,
-            flexDirection: `column`,
             alignItems: 'center',
             justifyContent: `center`,
           }}
