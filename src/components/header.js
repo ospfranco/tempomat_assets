@@ -7,7 +7,6 @@ const Header = () => (
   <header>
     <div
       style={{
-        // background: `red`,
         background: 'linear-gradient(150deg,#05BEA4 15%,#94EE7E 94%)',
         height: '500px',
         transform: 'skewY(-12deg)',
@@ -20,13 +19,7 @@ const Header = () => (
       }}
     />
     <div
-      style={{
-        margin: `0 auto`,
-        padding: `1.45rem 1.0875rem`,
-        display: `flex`,
-        alignItems: `center`,
-        justifyContent: `space-between`,
-      }}
+      className="header-content"
     >
       <div style={{width: 180}}>
         <Title />

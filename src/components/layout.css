@@ -612,19 +612,51 @@ pre tt:after {
 }
 
 .explanation {
-  width: 60%;
-  margin-top: 100px;
-  margin-bottom: 10px;
+  flex: 1;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-@media only screen and (max-width: 480px) {
+.section {
+  margin: 4rem 2rem;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-content {
+  margin: 0 auto;
+  max-width: 960;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 720px) {
   html {
     font-size: 100%;
   }
 
   .explanation {
     width: 100%;
-    margin-top: 40px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .section {
+    margin: 4rem 0;
+    align-self: center;
+    text-align: center;
+    padding: 0 2rem
+  }
+
+  .header-content {
+    margin: 0 auto;
+    padding: 1.45rem 1.0875rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 

@@ -12,64 +12,48 @@ import gitlab from "../images/gitlab.png";
 import macButton from "../images/DownloadMac.svg";
 import githubMark from "../images/githubMark.png";
 import explanation from "../images/explanation.png"
+import notification from "../images/notification.png"
 
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Tempomat"
+      title="Home"
       description="Continuous Integration monitoring in macOS: CircleCI, Travis CI, Github, AppCenter, Bitrise"
     />
-    <div style={{padding: 20}}>
-      <img src={abstractBanner}/>
-    </div>
 
+    <img src={abstractBanner} style={{padding: 20, marginTop: 80}}/>
+    
+    <h1 className="section">
+      Monitor your CI jobs from your computer's desktop
+    </h1>
 
-    <div
-      style={{
-        display: `flex`,
-        flexWrap: "wrap-reverse",
-        margin: `0 auto`,
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
-        marginBottom: 60,
-      }}
-    >
-      <div
-        style={{
-          display: `flex`,
-          flexDirection: "column",
-          justifyContent: `center`,
-          alignItems: `center`,
-          flex: 1,
-          minWidth: "320px",
-          padding: 10,
-        }}
-      >
-        <h1 style={{ textAlign: "center" }}>
-          Stop guessing if your build is broken
-        </h1>
-        <img src={explanation} className="explanation"/>
-        <h1 style={{ textAlign: "center" }}>
-          Receive notifications and trigger builds from your desktop
-        </h1>
+    <div className="section">
+      <div style={{fontSize: `1.7rem`}}>
+        All the relevant information at a glance
       </div>
+      <img src={explanation} className="explanation"/>
+    </div>
+
+    <div className="section">
+      <div style={{fontSize: `1.7rem`}}>
+        Receive notifications and trigger rebuilds
+      </div>
+      <img src={notification} className="explanation"/>
     </div>
 
     <div
-      style={{
-        margin: `0 auto`,
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
-        marginBottom: 60,
-      }}
+      className="section"
     >
+      <div style={{fontSize: `1.7rem`, flex: 1}}>
+        Pick your CI provider
+      </div>
+
       <div
         style={{
+          flex: 1,
           display: `flex`,
           flexWrap: `wrap`,
-          justifyContent: `space-around`
+          justifyContent: `space-around`,
         }}
       >
         <div style={{display: `flex`, flexDirection: `column`, alignItems: `center`, width: 120}}>
@@ -98,9 +82,7 @@ const IndexPage = () => (
         </div>
       </div>
 
-      <h1 style={{ textAlign: "center" }}>
-        Supports many continuous integration providers
-      </h1>
+      
     </div>
 
     <div
