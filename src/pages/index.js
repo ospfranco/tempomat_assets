@@ -3,16 +3,11 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import abstractBanner from "../images/abstractBanner.png";
-import circleci from "../images/circleci_dark.png";
-import appcenter from "../images/appcenter_dark.png";
-import bitrise from "../images/bitrise_dark.png";
-import travis from "../images/travis_dark.png";
-import github from "../images/github_dark.png";
-import gitlab from "../images/gitlab.png";
 import macButton from "../images/DownloadMac.svg";
-import githubMark from "../images/githubMark.png";
-import explanation from "../images/explanation.png"
-import notification from "../images/notification.png"
+import explanation from "../images/explanation.png";
+import notification from "../images/notification.png";
+import providers from "../images/providers.png"
+import macbook from "../images/macbook.png"
 
 const IndexPage = () => (
   <Layout>
@@ -21,93 +16,80 @@ const IndexPage = () => (
       description="Continuous Integration monitoring in macOS: CircleCI, Travis CI, Github, AppCenter, Bitrise"
     />
 
-    <img src={abstractBanner} style={{padding: 20, marginTop: 80}}/>
-    
-    <h1 className="section">
-      Monitor your CI jobs from your computer's desktop
-    </h1>
+    <img src={abstractBanner} className="abstractBanner" />
 
-    <div className="section">
-      <div style={{fontSize: `1.7rem`}}>
-        All the relevant information at a glance
-      </div>
-      <img src={explanation} className="explanation"/>
+    <div style={{alignSelf: 'center', padding: 20, textAlign: 'center', marginBottom: 80, width: `90%`, maxWidth: 1000}}>
+      <h1>Monitor your CI jobs from your macOS desktop</h1>
+      <p>Tempomat is an application that sits on your macOS desktop (or mobile device) and retrieves information of your continuous integration system, you can see the status of each of your build jobs quickly and stop wondering if your build is broken.</p>
     </div>
 
-    <div className="section">
-      <div style={{fontSize: `1.7rem`}}>
-        Receive notifications and trigger rebuilds
+    <div className="midSection">
+      
+      <div className="section">
+        <img src={explanation} className="explanation" />
+        <h3 style={{ color: `white` }}>
+          Relevant information only
+        </h3>
+        <div style={{ color: `white` }}>
+          ✋ Stop scrolling through complex and slow UIs, all the information you need is here: <br/><br/>✅ Status and CI <br/>✅ Owner and repository <br/>✅ Branch <br/>✅ Build number 
+        </div>
       </div>
-      <img src={notification} className="explanation"/>
-    </div>
 
-    <div
-      className="section"
-    >
-      <div style={{fontSize: `1.7rem`, flex: 1}}>
-        Pick your CI provider
+      <div className="section">
+        <img src={notification} className="explanation" />
+        <h3 style={{ color: `white` }}>
+          Always on top of things
+        </h3>
+        <div style={{ color: `white` }}>
+          🚨 Receive a notification on your Desktop when you build breaks...<br/><br/> Even better, trigger a rebuild immediately! 🚀
+        </div>
+      </div>
+
+      <div className="section">
+        <img src={macbook} className="explanation" />
+        <h3 style={{ color: `white` }}>
+          Not a SaaS
+        </h3>
+        <div style={{ color: `white` }}>
+          No hidden charges, no pricing tiers, runs on your computer, buy it once, own it forever 🥰
+        </div>
+      </div>
+      <div className="section">
+        <img src={providers} className="explanation" />
+        <h3 style={{ color: `white` }}>
+          Connects with your CI
+        </h3>
+        <div style={{ color: `white` }}>
+          Supports many Continuous Integration systems or you can add your own, it's open source 😎
+        </div>
       </div>
 
       <div
         style={{
-          flex: 1,
           display: `flex`,
-          flexWrap: `wrap`,
-          justifyContent: `space-around`,
+          flexDirection: `column`,
+          alignItems: "center",
+          justifyContent: "center",
+          padding: 40,
         }}
       >
-        <div style={{display: `flex`, flexDirection: `column`, alignItems: `center`, width: 120}}>
-          <img src={circleci} style={{height: `4em`, width: `4em`}}/>
-          <h4 style={{fontWeight: 200}}>CircleCI</h4>
-        </div>
-        <div style={{display: `flex`, flexDirection: `column`, alignItems: `center`, width: 120}}>
-        <img src={appcenter} style={{height: `4em`, width: `4em`}}/>
-          <h4 style={{fontWeight: 200}}>AppCenter</h4>
-        </div>
-        <div style={{display: `flex`, flexDirection: `column`, alignItems: `center`, width: 120}}>
-        <img src={bitrise} style={{height: `4em`, width: `4em`}}/>
-          <h4 style={{fontWeight: 200}}>Bitrise</h4>
-        </div>
-        <div style={{display: `flex`, flexDirection: `column`, alignItems: `center`, width: 120}}>
-        <img src={travis} style={{height: `4em`, width: `4em`}}/>
-          <h4 style={{fontWeight: 200}}>TravisCI</h4>
-        </div>
-        <div style={{display: `flex`, flexDirection: `column`, alignItems: `center`, width: 120}}>
-        <img src={github} style={{height: `4em`, width: `4em`}}/>
-          <h4 style={{fontWeight: 200}}>Github</h4>
-        </div>
-        <div style={{display: `flex`, flexDirection: `column`, alignItems: `center`, width: 120}}>
-        <img src={gitlab} style={{height: `4em`, width: `4em`}}/>
-          <h4 style={{fontWeight: 200}}>Gitlab</h4>
-        </div>
+        <a
+          href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
+          alt="Mac app store link"
+        >
+          <img src={macButton} style={{ marginBottom: 0, width: 250 }} />
+        </a>
+        <a
+          href="https://github.com/ospfranco/tempomat"
+          alt="Github link"
+        >
+        <h4 style={{ color: `white`, marginTop: 20 }}>
+          Checkout the Source Code
+        </h4>
+        </a>
       </div>
-
-      
     </div>
 
-    <div
-      style={{
-        display: `flex`,
-        flexDirection: `row`,
-        alignItems: "center",
-        justifyContent: "center",
-        padding: 40,
-      }}
-    >
-      <a
-        href="https://github.com/ospfranco/tempomat"
-        alt="Github link"
-        style={{ marginRight: 40 }}
-      >
-        <img src={githubMark} style={{ marginBottom: 0 }} />
-      </a>
-      <a
-        href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
-        alt="Mac app store link"
-      >
-        <img src={macButton} style={{ marginBottom: 0, width: 250 }} />
-      </a>
-    </div>
   </Layout>
 );
 

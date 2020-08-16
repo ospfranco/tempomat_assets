@@ -8,7 +8,7 @@ const Header = () => (
     <div
       style={{
         background: 'linear-gradient(150deg,#05BEA4 15%,#94EE7E 94%)',
-        height: '500px',
+        height: '600px',
         transform: 'skewY(-12deg)',
         'transform-origin': 0,
         position: `absolute`,
@@ -21,14 +21,8 @@ const Header = () => (
     <div
       className="header-content"
     >
-      <div style={{width: 180}}>
+      <div style={{width: 200}}>
         <Title />
-      </div>
-
-      <div>
-        <a href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12" alt="Mac app store link">
-          <img src={macButton} style={{marginBottom: 0, width: 200}}/>
-        </a>
       </div>
     </div>
   </header>
