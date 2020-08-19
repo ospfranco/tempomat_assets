@@ -89,6 +89,79 @@ const IndexPage = () => (
         </a>
       </div>
     </div>
+    <div className="bottomSection">
+      <div className="section">
+        <h3 style={{ color: `white` }}>
+          Must have for developers
+        </h3>
+        <h3 style={{ color: `white` }}>
+          ⭐️⭐️⭐️⭐️⭐️
+        </h3>
+        <h4 style={{ color: `white` }}>
+          by srolija
+        </h4>
+        <div style={{ color: `white` }}>
+          One of those tools that you don't realize how convenient it makes life until you try it. Works great with CircleCI and saves time having to wait and check the build status manually.
+        </div>
+      </div>
+
+      <div className="section">
+        <h3 style={{ color: `white` }}>
+          A simple tool that adds so much DX value
+        </h3>
+        <h3 style={{ color: `white` }}>
+          ⭐️⭐️⭐️⭐️⭐️
+        </h3>
+        <h4 style={{ color: `white` }}>
+          by twgraham
+        </h4>
+        <div style={{ color: `white` }}>
+        I have no idea why a tool like this has not been published earlier. Having a unobtrusive reminder of CI status is extremely useful. While email or slack notifications might be great for important build notifications, I find this is so much better for getting updates on feature branches that don't need my immediate attention. It's also so much faster than going to a bookmarked CI page in your browser, finding the build, and waiting for slow interfaces to load. Would easily recommend to anyone using CI on your projects - especially CircleCI.
+        </div>
+      </div>
+
+      <div className="section">
+        <h3 style={{ color: `white` }}>
+          Useful little app
+        </h3>
+        <h3 style={{ color: `white` }}>
+          ⭐️⭐️⭐️⭐️⭐️
+        </h3>
+        <h4 style={{ color: `white` }}>
+          by Speller
+        </h4>
+        <div style={{ color: `white` }}>
+          Found it useful to track my builds, developer was very responsive and fixed a small bug I had immediately
+        </div>
+      </div>
+      
+
+      <div
+      className="section"
+        style={{
+          display: `flex`,
+          flexDirection: `column`,
+          alignItems: "center",
+          justifyContent: "center",
+          padding: 40,
+        }}
+      >
+        <a
+          href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
+          alt="Mac app store link"
+        >
+          <img src={macButton} style={{ marginBottom: 0, width: 250 }} />
+        </a>
+        <a
+          href="https://github.com/ospfranco/tempomat"
+          alt="Github link"
+        >
+        <h4 style={{ color: `white`, marginTop: 20 }}>
+          Checkout the Source Code
+        </h4>
+        </a>
+      </div>
+    </div>
 
   </Layout>
 );

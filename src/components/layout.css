@@ -645,6 +645,14 @@ pre tt:after {
   justify-content: center;
 }
 
+.bottomSection {
+  background: linear-gradient(150deg,#f38f0c 15%,#f84d19 94%);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .header-content {
   padding-top: 40px;
   display: flex;
