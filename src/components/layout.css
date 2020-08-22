@@ -637,12 +637,23 @@ pre tt:after {
   /* text-align: justify; */
 }
 
+/* background: 'linear-gradient(150deg,#05BEA4 15%,#94EE7E 94%)', */
+.topSection {
+  background: linear-gradient(150deg,#05BEA4 15%,#94EE7E 94%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .midSection {
-  background: linear-gradient(150deg,#4816d1 15%,#597fcf 94%);
+  /* background: linear-gradient(150deg,#4816d1 15%,#597fcf 94%); */
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  color: '#333'
 }
 
 .bottomSection {

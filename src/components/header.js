@@ -5,11 +5,10 @@ import macButton from '../images/DownloadMac.svg'
 
 const Header = () => (
   <header>
-    <div
+    {/* <div
       style={{
         background: 'linear-gradient(150deg,#05BEA4 15%,#94EE7E 94%)',
         height: '600px',
-        transform: 'skewY(-12deg)',
         'transform-origin': 0,
         position: `absolute`,
         top: 0,
@@ -17,14 +16,8 @@ const Header = () => (
         right: 0,
         zIndex: -1
       }}
-    />
-    <div
-      className="header-content"
-    >
-      <div style={{width: 200}}>
-        <Title />
-      </div>
-    </div>
+    /> */}
+    
   </header>
 )
 

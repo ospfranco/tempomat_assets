@@ -2,7 +2,8 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-import abstractBanner from "../images/abstractBanner.png";
+import Steps from "../images/Steps.png";
+import TitleLight from "../images/titleLight.png";
 import macButton from "../images/DownloadMac.svg";
 import explanation from "../images/explanation.png";
 import notification from "../images/notification.png";
@@ -15,51 +16,54 @@ const IndexPage = () => (
       title="Home"
       description="Continuous Integration monitoring in macOS: CircleCI, Travis CI, Github, AppCenter, Bitrise"
     />
+    <div className="topSection">
+      <img src={TitleLight} style={{width: 200}} />
 
-    <img src={abstractBanner} className="abstractBanner" />
+      <img src={Steps} className="abstractBanner" />
 
-    <div style={{alignSelf: 'center', padding: 20, textAlign: 'center', marginBottom: 80, width: `90%`, maxWidth: 1000}}>
-      <h1>Monitor your CI jobs from your macOS desktop</h1>
-      <p>Tempomat is an application that sits on your macOS desktop (or mobile device) and retrieves information of your continuous integration system, you can see the status of each of your build jobs quickly and stop wondering if your build is broken.</p>
+      <div style={{alignSelf: 'center', padding: 20, textAlign: 'center', marginBottom: 80, width: `90%`, maxWidth: 1000, color: 'white'}}>
+        <h1>Monitor your CI jobs from your macOS desktop</h1>
+        <p>Tempomat sits on your macOS desktop and retrieves information of your continuous integration system(s), quickly check your build jobs quickly and stop wondering if your build is broken.</p>
+      </div>
     </div>
 
     <div className="midSection">
       
       <div className="section">
         <img src={explanation} className="explanation" />
-        <h3 style={{ color: `white` }}>
+        <h3>
           Relevant information only
         </h3>
-        <div style={{ color: `white` }}>
+        <div>
           ✋ Stop scrolling through complex and slow UIs, all the information you need is here: <br/><br/>✅ Status and CI <br/>✅ Owner and repository <br/>✅ Branch <br/>✅ Build number 
         </div>
       </div>
 
       <div className="section">
         <img src={notification} className="explanation" />
-        <h3 style={{ color: `white` }}>
+        <h3>
           Always on top of things
         </h3>
-        <div style={{ color: `white` }}>
+        <div>
           🚨 Receive a notification on your Desktop when you build breaks...<br/><br/> Even better, trigger a rebuild immediately! 🚀
         </div>
       </div>
 
       <div className="section">
         <img src={macbook} className="explanation" />
-        <h3 style={{ color: `white` }}>
+        <h3>
           Not a SaaS
         </h3>
-        <div style={{ color: `white` }}>
+        <div>
           No hidden charges, no pricing tiers, runs on your computer, buy it once, own it forever 🥰
         </div>
       </div>
       <div className="section">
         <img src={providers} className="explanation" />
-        <h3 style={{ color: `white` }}>
+        <h3>
           Connects with your CI
         </h3>
-        <div style={{ color: `white` }}>
+        <div>
           Supports many Continuous Integration systems or you can add your own, it's open source 😎
         </div>
       </div>
@@ -83,8 +87,8 @@ const IndexPage = () => (
           href="https://github.com/ospfranco/tempomat"
           alt="Github link"
         >
-        <h4 style={{ color: `white`, marginTop: 20 }}>
-          Checkout the Source Code
+        <h4 style={{ marginTop: 20 }}>
+          Source Code
         </h4>
         </a>
       </div>
@@ -157,7 +161,7 @@ const IndexPage = () => (
           alt="Github link"
         >
         <h4 style={{ color: `white`, marginTop: 20 }}>
-          Checkout the Source Code
+          Source Code
         </h4>
         </a>
       </div>
