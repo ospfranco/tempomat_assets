@@ -21,10 +21,18 @@ const IndexPage = () => (
 
       <img src={Steps} className="abstractBanner" />
 
-      <div style={{alignSelf: 'center', padding: 20, textAlign: 'center', marginBottom: 80, width: `90%`, maxWidth: 1000, color: 'white'}}>
+      <div style={{alignSelf: 'center', padding: 20, textAlign: 'center', width: `90%`, maxWidth: 1000, color: 'white'}}>
         <h1>Monitor your CI jobs from your macOS desktop</h1>
         <p>Tempomat sits on your macOS desktop and retrieves information of your continuous integration system(s), quickly check your build jobs quickly and stop wondering if your build is broken.</p>
       </div>
+
+      <a
+        href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
+        alt="Mac app store link"
+        style={{marginBottom: 40, marginTop: 40}}
+      >
+        <img src={macButton} style={{ marginBottom: 0, width: 250 }} />
+      </a>
     </div>
 
     <div className="midSection">
@@ -64,33 +72,8 @@ const IndexPage = () => (
           Connects with your CI
         </h3>
         <div>
-          Supports many Continuous Integration systems or you can add your own, it's open source 😎
+          Supports many Continuous Integration systems
         </div>
-      </div>
-
-      <div
-        style={{
-          display: `flex`,
-          flexDirection: `column`,
-          alignItems: "center",
-          justifyContent: "center",
-          padding: 40,
-        }}
-      >
-        <a
-          href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
-          alt="Mac app store link"
-        >
-          <img src={macButton} style={{ marginBottom: 0, width: 250 }} />
-        </a>
-        <a
-          href="https://github.com/ospfranco/tempomat"
-          alt="Github link"
-        >
-        <h4 style={{ marginTop: 20 }}>
-          Source Code
-        </h4>
-        </a>
       </div>
     </div>
     <div className="bottomSection">
@@ -155,14 +138,6 @@ const IndexPage = () => (
           alt="Mac app store link"
         >
           <img src={macButton} style={{ marginBottom: 0, width: 250 }} />
-        </a>
-        <a
-          href="https://github.com/ospfranco/tempomat"
-          alt="Github link"
-        >
-        <h4 style={{ color: `white`, marginTop: 20 }}>
-          Source Code
-        </h4>
         </a>
       </div>
     </div>
