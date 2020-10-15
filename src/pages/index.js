@@ -17,7 +17,7 @@ const IndexPage = () => (
       description="macOS Continuous Integration monitoring: CircleCI, Travis CI, Github, AppCenter, Bitrise"
     />
     <div className="topSection">
-      <img src={TitleLight} style={{ width: 400 }} />
+      <img src={TitleLight} style={{ width: 200 }} />
 
       <img src={Steps} className="abstractBanner" />
 
@@ -25,73 +25,87 @@ const IndexPage = () => (
         style={{
           alignSelf: "center",
           padding: 20,
-          textAlign: "center",
-          width: `90%`,
-          maxWidth: 1000,
-          color: "white",
+          // textAlign: "center",
+          maxWidth: 700,
+          color: 'white'
         }}
       >
-        <h1>Monitor your CI/CD jobs from your desktop</h1>
-        <h3>
-          Tempomat sits on the macOS menu bar and retrieves information your favourite
-          CI/CD system, check your build jobs quickly and stop wondering if your
-          build is broken.
-        </h3>
+        <p style={{fontSize: 36, fontWeight: '600'}}>Monitor your builds, from your desktop.</p>
+        <p style={{fontSize: 20, lineHeight: '1.5em'}}>
+          Tempomat sits on the macOS menu bar and retrieves information from your
+          CI/CD system, access your builds immediately and stop wasting your time.
+        </p>
       </div>
 
-      <a
-        href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
-        alt="Mac app store link"
-        style={{ marginBottom: 40, marginTop: 40 }}
+      <div
+        style={{display: 'flex', alignItems: 'center', marginBottom: 80, marginTop: 80}}
       >
-        <img src={macButton} style={{ marginBottom: 0, width: 250 }} />
-      </a>
+        <a
+          href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
+          alt="Mac app store link"
+        >
+          <img src={macButton} style={{ marginBottom: 0, width: 160, marginRight: 30 }} />
+        </a>
 
-      <p style={{ alignSelf: "center", padding: 20, color: "white" }}>
-        Keep scrolling to find out more! 😉
-      </p>
+        <a
+          href="#features"
+          alt="Mac app store link"
+          className="button"
+        >
+          See the features
+        </a>
+      </div>
     </div>
 
-    <div className="midSection">
-      <div className="section">
-        <img src={explanation} className="explanation" />
-        <p style={{fontSize: 18, textAlign: 'center'}}>
-          Say good bye to the <span style={{fontStyle: 'italic'}}>slow</span> web, say hi to a <span style={{fontWeight: 'bold'}}>fast</span> native solution with all the info you need.
-        </p>
+    <div className="midSection" id="features">
+      <div style={{marginTop: 80, marginBottom: 80, display: 'flex', justifyContent: 'center'}}>
+        {/* <p style={{fontSize: 24, fontWeight: 600, color: '#05BEA4'}}>Why Tempomat... why not?!</p> */}
+        <p style={{fontSize: 28, maxWidth: 700, fontWeight: 500}}>All your builds... from all your branches... from all your CIs... neatly presented, sitting comfortably on the menu bar, accesible with a single click. <br/><br/>Don't pretend you are not <span style={{fontWeight: 'bold', color: '#05BEA4'}}>excited</span>.</p>
+      </div>
+      <div style={{borderBottom: '1px solid #CCC'}}/>
 
-        {/* <ul>
-          <li>CI/CD</li>
-          <li>Build status </li>
-          <li>Owner </li>
-          <li>Repository name </li>
-          <li>Branch </li>
-          <li>Build number </li>
-        </ul> */}
+      <div style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        marginTop: 80,
+        marginBottom: 80
+      }}>
+        <div className="section">
+          <img src={explanation} className="explanation" />
+          <p style={{fontWeight: 600, fontSize: 20}}>Fast & Furious</p>
+          <p style={{fontSize: 16}}>
+            Say good bye to the <span style={{fontStyle: 'italic'}}>slow</span> web, say hi to a <span style={{fontWeight: 'bold', color: '#05BEA4'}}>fast</span> native solution.
+          </p>
+        </div>
+
+        <div className="section">
+          <img src={notification} className="explanation" />
+          <p style={{fontWeight: 600, fontSize: 20}}>Out of the way</p>
+          <p style={{fontSize: 16}}>
+            Receive <span style={{fontWeight: 'bold', color: '#05BEA4'}}>notifications</span> when any of your builds break.
+          </p>
+        </div>
+
+        <div className="section">
+          <img src={providers} className="explanation" />
+          <p style={{fontWeight: 600, fontSize: 20}}>Works for you</p>
+          <p style={{fontSize: 16}}>
+          Supports many <span style={{fontWeight: 'bold', color: '#05BEA4'}}>CI providers</span> with more added regularly.
+          </p>
+        </div>
       </div>
 
-      <div className="section">
-        <img src={notification} className="explanation" />
-        <p style={{fontSize: 18, textAlign: 'center'}}>
-          Receive <span style={{fontWeight: 'bold'}}>notifications</span> when any of your builds break.
-        </p>
-      </div>
+      <div style={{borderBottom: '1px solid #CCC'}}/>
 
-      <div className="section">
-        <img src={providers} className="explanation" />
-        <p style={{fontSize: 18, textAlign: 'center'}}>
-        Supports many <span style={{fontWeight: 'bold'}}>CI providers</span> with more added regularly.
-        </p>
-      </div>
-      
-      <div className="section">
-        <img src={macbook} className="explanation" />
-        <p style={{fontSize: 18, textAlign: 'center'}}>
+      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 100, marginBottom: 100}}>
+        <p style={{fontSize: 16}}>
+        <h2>and that is not all...</h2>
           <ul>
-            <li>Not a SaaS, <span style={{fontWeight: 'bold'}}>buy it once</span>, then it's yours</li>
-            <li>Powerful <span style={{fontWeight: 'bold'}}>Regex</span> filters</li>
-            <li><span style={{fontWeight: 'bold'}}>Securely</span> stores data on the macOS keychain</li>
-            <li><span style={{fontWeight: 'bold'}}>Beautiful</span> minimalistic design</li>
-            <li>Trigger a <span style={{fontWeight: 'bold'}}>rebuild</span> with a single click!</li>
+            <li>Not a SaaS, <span style={{fontWeight: 'bold', color: '#05BEA4'}}>buy it once</span>, then it's yours</li>
+            <li>Powerful <span style={{fontWeight: 'bold', color: '#05BEA4'}}>regex</span> filters</li>
+            <li><span style={{fontWeight: 'bold', color: '#05BEA4'}}>Securely</span> stores data on the macOS keychain</li>
+            <li><span style={{fontWeight: 'bold', color: '#05BEA4'}}>Beautiful</span> minimalistic design</li>
+            <li>Trigger a <span style={{fontWeight: 'bold', color: '#05BEA4'}}>rebuild</span> with a single click!</li>
           </ul>
         </p>
       </div>
@@ -99,21 +113,20 @@ const IndexPage = () => (
     <div className="bottomSection">
       <div className="section">
         <h3 style={{ color: `white` }}>Must have for developers</h3>
-        <h3 style={{ color: `white` }}>⭐️⭐️⭐️⭐️⭐️</h3>
-        <h4 style={{ color: `white` }}>by srolija</h4>
+        <h1 style={{ color: `white` }}>5/5</h1>
         <div style={{ color: `white` }}>
           One of those tools that you don't realize how convenient it makes life
           until you try it. Works great with CircleCI and saves time having to
           wait and check the build status manually.
         </div>
+        <h4 style={{ color: `white`, marginTop: 20 }}>by srolija</h4>
       </div>
 
       <div className="section">
         <h3 style={{ color: `white` }}>
           A simple tool that adds so much DX value
         </h3>
-        <h3 style={{ color: `white` }}>⭐️⭐️⭐️⭐️⭐️</h3>
-        <h4 style={{ color: `white` }}>by twgraham</h4>
+        <h1 style={{ color: `white` }}>5/5</h1>
         <div style={{ color: `white` }}>
           I have no idea why a tool like this has not been published earlier.
           Having a unobtrusive reminder of CI status is extremely useful. While
@@ -125,16 +138,17 @@ const IndexPage = () => (
           easily recommend to anyone using CI on your projects - especially
           CircleCI.
         </div>
+        <h4 style={{ color: `white`, marginTop: 20 }}>by twgraham</h4>
       </div>
 
       <div className="section">
         <h3 style={{ color: `white` }}>Useful little app</h3>
-        <h3 style={{ color: `white` }}>⭐️⭐️⭐️⭐️⭐️</h3>
-        <h4 style={{ color: `white` }}>by Speller</h4>
+        <h1 style={{ color: `white` }}>5/5</h1>
         <div style={{ color: `white` }}>
           Found it useful to track my builds, developer was very responsive and
           fixed a small bug I had immediately
         </div>
+        <h4 style={{ color: `white`, marginTop: 20 }}>by Speller</h4>
       </div>
 
       <div
