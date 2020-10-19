@@ -9,6 +9,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F2F4F8;
 }
 article,
 aside,
@@ -622,8 +623,8 @@ pre tt:after {
 }
 
 .abstractBanner {
-  padding: 20px;
-  margin-top: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   width: 90%;
   max-width: 1000px;
   align-self: center;
@@ -638,7 +639,7 @@ pre tt:after {
 }
 
 .topSection {
-  background: linear-gradient(-180deg,#195577 ,#fff );
+  /* background: linear-gradient(-180deg,#195577 ,#fff ); */
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -669,17 +670,41 @@ pre tt:after {
   justify-content: center;
 }
 
+.button-wrapper {
+  background: linear-gradient(90deg, #55cf69,#ffd06a, #ff7772);
+  padding: 9px 1px;
+  border-radius: 5px;
+}
+
 .button {
   border-radius: 5px;
-  background-color: #000;
+  background-color: #F2F4F8;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #888;
+  font-weight: 500;
+}
+
+.flat_button {
+  /* border-radius: 5px;
+  background-color: #000; */
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-  color: white;
-  font-weight: 500;
+  /* color: white; */
+  font-weight: 600;
+  color: #888;
 }
 
 .mainAbstract {
   width: 700px;
+}
+
+.rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #6FCA27), color-stop(0.5, #FFD130), color-stop(1, #FC4943));
+  background-image: gradient( linear, left top, right top, color-stop(0, #6FCA27), color-stop(0.5, #FFD130), color-stop(1, #FC4943));
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 @media only screen and (max-width: 720px) {
@@ -704,11 +729,6 @@ pre tt:after {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .abstractBanner {
-    width: 100%;
-    align-self: center;
   }
 
   .midSection {
