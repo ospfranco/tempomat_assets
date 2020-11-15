@@ -2,13 +2,9 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-// import Steps from "../images/Steps.png";
 import StepsVertical from "../images/steps_vertical.png";
 import StepsHorizontal from "../images/steps_horizontal.png";
-import TitleLight from "../images/titleLight.png";
 import macButton from "../images/DownloadMac.svg";
-import explanation from "../images/explanation.png";
-import notification from "../images/notification.png";
 import providers from "../images/providers.png";
 import abstractPreview from "../images/abstractPreview.png";
 
@@ -21,7 +17,7 @@ const IndexPage = () => (
     <div className="container">
       <picture className="abstractBanner">
         <source media="(max-width: 799px)" srcset={StepsVertical} />
-        <img src={StepsHorizontal} />
+        <img src={StepsHorizontal} alt="Steps showing how the app looks"/>
       </picture>
 
       <div
@@ -37,7 +33,7 @@ const IndexPage = () => (
           </span>
         </div>
         <p style={{ fontSize: 30, fontWeight: "700" }}>
-          monitor your builds, from your desktop.
+          Monitor your builds, from your desktop.
         </p>
         <p style={{ lineHeight: "1.5em" }}>
           The best macOS menu bar app to retrieve, store and notify you on your
@@ -49,32 +45,31 @@ const IndexPage = () => (
       <div
         style={{
           display: "flex",
-          alignItems: "space-around",
-          justifyContent: "space-around",
+          flexDirection: "column",
           marginBottom: 120,
           marginTop: 120,
-          flexWrap: "wrap",
-          height: 100,
-          width: 300,
         }}
       >
         <a
           href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
           alt="Mac app store link"
         >
-          <img src={macButton} style={{ marginBottom: 0, width: 160 }} />
+          <img src={macButton} style={{ marginBottom: 0, width: 160 }} alt="Buy on app store button"/>
         </a>
-        <div className="button-wrapper">
+        <div className="button-wrapper" style={{marginTop: 20}}>
           <a href="#preview" alt="Mac app store link" className="button">
-            <span className="rainbow">Uh... show me more</span>
+            <span className="rainbow">Show me more!</span>
           </a>
         </div>
       </div>
 
       <div style={{ maxWidth: 700 }}>
-        <img id="preview" src={abstractPreview} className="mainAbstract" />
+        <img id="preview" src={abstractPreview} className="mainAbstract" alt="Big preview"/>
         <p style={{ fontSize: 30, fontWeight: "700" }}>
-          ALL the builds, ALL the branches, ALL the CIs
+          All the power from your desktop
+        </p>
+        <p>
+          Tempomat shows you all the information you need on a single click.
         </p>
         <ul>
           <li>CI Provider</li>
@@ -159,6 +154,13 @@ const IndexPage = () => (
               , right from your desktop.
             </li>
             <li>
+              By the way it is also {" "}
+              <span className="rainbow" style={{ fontWeight: "bold" }}>
+                OPEN SOURCE
+              </span>
+              , you can contribute to it!
+            </li>
+            <li>
               Supports all the{" "}
               <span className="rainbow" style={{ fontWeight: "bold" }}>
                 CIs
@@ -168,7 +170,7 @@ const IndexPage = () => (
           </ul>
         </p>
       </div>
-      <img src={providers} className="explanation" style={{ marginTop: 20 }} />
+      <img src={providers} className="explanation" style={{ marginTop: 20 }} alt="List of supported systems"/>
 
       <div
         className="button-wrapper"
@@ -231,13 +233,12 @@ const IndexPage = () => (
       </div>
 
       <div className="section">
-        <h3>Useful little app</h3>
+        <h3>Great tool for monitoring CI workflows</h3>
         <h1 className="rainbow">5/5</h1>
         <div>
-          Found it useful to track my builds, developer was very responsive and
-          fixed a small bug I had immediately
+        I've been using CCMenu for a while but that has issues as it only monitors the default branch in CircelCI. I wanted the abiilty to monitor specific named branches such as "release" or "preflight", and also any personal branches such as "foo-*". Tempomat tool totally does all of that!
         </div>
-        <h4 style={{ marginTop: 20, fontWeight: "bold" }}>by Speller</h4>
+        <h4 style={{ marginTop: 20, fontWeight: "bold" }}>by Nigel1066</h4>
       </div>
     </div>
     <div
