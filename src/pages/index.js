@@ -7,13 +7,31 @@ import StepsHorizontal from "../images/steps_horizontal.png";
 import macButton from "../images/DownloadMac.svg";
 import providers from "../images/providers.png";
 import abstractPreview from "../images/abstractPreview.png";
+import Icon from "../images/Icon.png";
 
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Home"
+      title="CI Monitoring"
       description="macOS Continuous Integration monitoring: CircleCI, Travis CI, Github, AppCenter, Bitrise"
     />
+    <nav className="navbar">
+      <img src={Icon} style={{height: 30, width: 30, marginRight: 10, marginBottom: 0}}/>
+      <div style={{flex: 1}}>
+        <span className="rainbow" style={{ fontSize: 24 }}>
+          Tempomat
+        </span>
+      </div>
+      <div>
+        <a href="https://twitter.com/tempomat_app" className="navbar-button">Twitter</a>
+      </div>
+      <div>
+        <a href="https://github.com/ospfranco/tempomat" className="navbar-button">Source</a>
+      </div>
+      <div>
+        <a href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12" className="navbar-button">Get It</a>
+      </div>
+    </nav>
     <div className="container">
       <picture className="abstractBanner">
         <source media="(max-width: 799px)" srcset={StepsVertical} />
@@ -24,15 +42,10 @@ const IndexPage = () => (
         style={{
           alignSelf: "center",
           padding: 20,
-          maxWidth: 700,
+          maxWidth: 800,
         }}
       >
-        <div>
-          <span className="rainbow" style={{ fontSize: 40 }}>
-            Tempomat
-          </span>
-        </div>
-        <p style={{ fontSize: 30, fontWeight: "700" }}>
+        <p style={{ fontSize: 40, fontWeight: "700" }}>
           Monitor your builds, from your desktop.
         </p>
         <p style={{ lineHeight: "1.5em" }}>

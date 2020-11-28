@@ -705,6 +705,24 @@ pre tt:after {
   width: 700px;
 }
 
+.navbar {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100vw;
+  background-color: #292f3a;
+  align-items: center;
+}
+
+.navbar-button {
+ text-decoration: none; 
+ color: white;
+ padding-left: 10px;
+ padding-right: 10px;
+ font-weight: 500;
+}
+
 @media only screen and (max-width: 720px) {
   html {
     font-size: 100%;
@@ -735,6 +753,24 @@ pre tt:after {
   .mainAbstract {
     width: 100%;
     align-self: center;
+  }
+
+  .navbar {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100vw;
+    background-color: #292f3a;
+    align-items: center;
+  }
+
+  .navbar-button {
+  text-decoration: none; 
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: 500;
   }
 }
 
