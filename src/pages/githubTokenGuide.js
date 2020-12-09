@@ -21,11 +21,10 @@ const SecondPage = () => (
         <li>Go into the developer tab</li>
         <li>Go into personal tokens</li>
         <li>Create new token</li>
-        <li>Make sure the token has workflow access (no read only permission at this time, but this is necessary for the API to return Actions information)</li>
+        <li>Make sure the token has `workflow` and `repo` access</li>
         <li>Copy and Paste the token into tempomat</li>
         <li>Each row is a repository you need to subscribe, if you only have one repository there is no need to click on the "Add Repository" button</li>
         <li>You are done! Tempomat should now refresh and fetch any action information</li>
-
       </ul>
     </p>
 
