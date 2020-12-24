@@ -16,8 +16,8 @@ const IndexPage = () => (
       description="macOS Continuous Integration monitoring: CircleCI, Travis CI, Github, AppCenter, Bitrise"
     />
     <nav className="navbar">
-      <img src={Icon} style={{height: 30, width: 30, marginRight: 10, marginBottom: 0}}/>
-      <div style={{flex: 1}}>
+      <img src={Icon} style={{ height: 30, width: 30, marginRight: 10, marginBottom: 0 }} />
+      <div style={{ flex: 1 }}>
         <span className="rainbow" style={{ fontSize: 24 }}>
           Tempomat
         </span>
@@ -29,13 +29,17 @@ const IndexPage = () => (
         <a href="https://github.com/ospfranco/tempomat" className="navbar-button">Source</a>
       </div>
       <div>
-        <a href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12" className="navbar-button">Get It</a>
+        <a
+          href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
+          className="navbar-button"
+          style={{ border: '1px solid', borderRadius: 5, padding: 10 }}
+        >Get it</a>
       </div>
     </nav>
     <div className="container">
       <picture className="abstractBanner">
         <source media="(max-width: 799px)" srcset={StepsVertical} />
-        <img src={StepsHorizontal} alt="Steps showing how the app looks"/>
+        <img src={StepsHorizontal} alt="Steps showing how the app looks" />
       </picture>
 
       <div
@@ -46,11 +50,10 @@ const IndexPage = () => (
         }}
       >
         <p style={{ fontSize: 40, fontWeight: "700" }}>
-          Monitor your builds, from your desktop.
+          Monitor your builds and endpoints from your desktop
         </p>
-        <p style={{ lineHeight: "1.5em" }}>
-          The best macOS menu bar app to retrieve, store and notify you on your
-          CI/CD builds, are you ready to stop opening web pages like a chump and
+        <p style={{ fontSize: 20, lineHeight: '2rem' }}>
+          Tempomat is a macOS menu bar app that polls your continuous integration system and/or http endpoints and notifies you when something is broken, are you ready to stop opening web pages like a chump and
           stop wasting your time?
         </p>
       </div>
@@ -60,16 +63,16 @@ const IndexPage = () => (
           display: "flex",
           flexDirection: "column",
           marginBottom: 120,
-          marginTop: 120,
+          marginTop: 20,
         }}
       >
         <a
           href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
           alt="Mac app store link"
         >
-          <img src={macButton} style={{ marginBottom: 0, width: 160 }} alt="Buy on app store button"/>
+          <img src={macButton} style={{ marginBottom: 0, width: 160 }} alt="Buy on app store button" />
         </a>
-        <div className="button-wrapper" style={{marginTop: 20}}>
+        <div className="button-wrapper" style={{ marginTop: 20 }}>
           <a href="#preview" alt="Mac app store link" className="button">
             <span className="rainbow">Show me more!</span>
           </a>
@@ -77,7 +80,7 @@ const IndexPage = () => (
       </div>
 
       <div style={{ maxWidth: 700 }}>
-        <img id="preview" src={abstractPreview} className="mainAbstract" alt="Big preview"/>
+        <img id="preview" src={abstractPreview} className="mainAbstract" alt="Big preview" />
         <p style={{ fontSize: 30, fontWeight: "700" }}>
           All the power from your desktop
         </p>
@@ -86,14 +89,14 @@ const IndexPage = () => (
         </p>
         <ul>
           <li>CI Provider</li>
-          <li>Build status</li>
+          <li>Status</li>
           <li>Repository owner & name</li>
           <li>Branch</li>
           <li>Build number</li>
+          <li>Individual checks</li>
         </ul>
         <p>
-          Sorted, filtered and already loaded when you need it. No need to wait
-          for slow web apps.
+          Sort by date, status or name, filter via regexes
         </p>
       </div>
 
@@ -120,23 +123,30 @@ const IndexPage = () => (
             <li>
               It is{" "}
               <span className="rainbow" style={{ fontWeight: "bold" }}>
-                FAST AF
+                FAST
               </span>
-              , it's native macOS app, it doesn't get any faster.
+              , it's native macOS app.
+            </li>
+            <li>
+              Create{" "}
+              <span className="rainbow" style={{ fontWeight: "bold" }}>
+                HTTP HEALTH CHECKS
+              </span>{" "}
+              for your back-end or front-end deployment.
             </li>
             <li>
               Receive{" "}
               <span className="rainbow" style={{ fontWeight: "bold" }}>
                 NOTIFICATIONS
               </span>{" "}
-              when a build fails/passes.
+              on failures or restorations.
             </li>
             <li>
               Not a another SaaS,{" "}
               <span className="rainbow" style={{ fontWeight: "bold" }}>
                 BUY IT ONCE
-              </span>
-              , own it until the end of time.
+              </span>{" "}
+               and it is yours.
             </li>
             <li>
               Create your own{" "}
@@ -148,7 +158,7 @@ const IndexPage = () => (
             <li>
               Everything is{" "}
               <span className="rainbow" style={{ fontWeight: "bold" }}>
-                ENCRYPTED AND SAFELY STORED
+                STORED ENCRYPTED
               </span>{" "}
               in the macOS keychain.
             </li>
@@ -167,23 +177,29 @@ const IndexPage = () => (
               , right from your desktop.
             </li>
             <li>
-              By the way it is also {" "}
+              It is also {" "}
               <span className="rainbow" style={{ fontWeight: "bold" }}>
                 OPEN SOURCE
               </span>
               , you can contribute to it!
             </li>
             <li>
+              <span className="rainbow" style={{ fontWeight: "bold" }}>
+                NO TRACKING
+              </span>
+              , your data and your privacy are a priority.
+            </li>
+            <li>
               Supports all the{" "}
               <span className="rainbow" style={{ fontWeight: "bold" }}>
-                CIs
+                CONTINUOUS INTEGRATION SYSTEMS
               </span>
               ... ok, not all, but many:
             </li>
           </ul>
         </p>
       </div>
-      <img src={providers} className="explanation" style={{ marginTop: 20 }} alt="List of supported systems"/>
+      <img src={providers} className="explanation" style={{ marginTop: 20 }} alt="List of supported systems" />
 
       <div
         className="button-wrapper"
@@ -249,7 +265,7 @@ const IndexPage = () => (
         <h3>Great tool for monitoring CI workflows</h3>
         <h1 className="rainbow">5/5</h1>
         <div>
-        I've been using CCMenu for a while but that has issues as it only monitors the default branch in CircelCI. I wanted the abiilty to monitor specific named branches such as "release" or "preflight", and also any personal branches such as "foo-*". Tempomat tool totally does all of that!
+          I've been using CCMenu for a while but that has issues as it only monitors the default branch in CircelCI. I wanted the abiilty to monitor specific named branches such as "release" or "preflight", and also any personal branches such as "foo-*". Tempomat tool totally does all of that!
         </div>
         <h4 style={{ marginTop: 20, fontWeight: "bold" }}>by Nigel1066</h4>
       </div>
