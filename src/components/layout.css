@@ -624,7 +624,7 @@ pre tt:after {
 
 .abstractBanner {
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   width: 90%;
   max-width: 1000px;
   align-self: center;
