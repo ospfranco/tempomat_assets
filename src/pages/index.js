@@ -16,7 +16,7 @@ const IndexPage = () => (
       description="macOS Continuous Integration monitoring: CircleCI, Travis CI, Github, AppCenter, Bitrise"
     />
     <nav className="navbar">
-      <img src={Icon} style={{ height: 30, width: 30, marginRight: 10, marginBottom: 0 }} />
+      <img src={Icon} style={{ height: 30, width: 30, marginRight: 10, marginBottom: 0 }} alt="app icon"/>
       <div style={{ flex: 1 }}>
         <span className="rainbow" style={{ fontSize: 24 }}>
           Tempomat
@@ -26,13 +26,10 @@ const IndexPage = () => (
         <a href="https://twitter.com/tempomat_app" className="navbar-button">Twitter</a>
       </div>
       <div>
-        <a href="https://github.com/ospfranco/tempomat" className="navbar-button">Source</a>
-      </div>
-      <div>
         <a
           href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
           className="navbar-button"
-          style={{ border: '1px solid', borderRadius: 5, padding: 10 }}
+          style={{ backgroundColor: 'white', borderRadius: 5, padding: 10, color: '#292f3a' }}
         >Get it</a>
       </div>
     </nav>
@@ -72,11 +69,6 @@ const IndexPage = () => (
         >
           <img src={macButton} style={{ marginBottom: 0, width: 160 }} alt="Buy on app store button" />
         </a>
-        <div className="button-wrapper" style={{ marginTop: 20 }}>
-          <a href="#preview" alt="Mac app store link" className="button">
-            <span className="rainbow">Show me more!</span>
-          </a>
-        </div>
       </div>
 
       <div style={{ maxWidth: 700 }}>
@@ -93,7 +85,8 @@ const IndexPage = () => (
           <li>Repository owner & name</li>
           <li>Branch</li>
           <li>Build number</li>
-          <li>Individual checks</li>
+          <li>Individual build checks</li>
+          <li><b>NEW</b> HTTP ping checks to your endpoints</li>
         </ul>
         <p>
           Sort by date, status or name, filter via regexes
@@ -101,22 +94,13 @@ const IndexPage = () => (
       </div>
 
       <div
-        className="button-wrapper"
-        style={{ marginTop: 80, marginBottom: 80 }}
-      >
-        <a href="#features" alt="Mac app store link" className="button">
-          <span className="rainbow">Hmm... what else can it do?</span>
-        </a>
-      </div>
-
-      <div
         id="features"
         style={{
-          marginTop: 20,
+          marginTop: 80,
         }}
       >
         <p style={{ fontSize: 30, fontWeight: "700" }}>
-          Here are all the goodies
+          Here are all the goodies:
         </p>
         <p style={{ fontSize: 16 }}>
           <ul>
@@ -177,13 +161,6 @@ const IndexPage = () => (
               , right from your desktop.
             </li>
             <li>
-              It is also {" "}
-              <span className="rainbow" style={{ fontWeight: "bold" }}>
-                OPEN SOURCE
-              </span>
-              , you can contribute to it!
-            </li>
-            <li>
               <span className="rainbow" style={{ fontWeight: "bold" }}>
                 NO TRACKING
               </span>
@@ -200,15 +177,6 @@ const IndexPage = () => (
         </p>
       </div>
       <img src={providers} className="explanation" style={{ marginTop: 20 }} alt="List of supported systems" />
-
-      <div
-        className="button-wrapper"
-        style={{ marginTop: 80, marginBottom: 80 }}
-      >
-        <a href="#testimonials" alt="Mac app store link" className="button">
-          <span className="rainbow">I'm still not convinced...</span>
-        </a>
-      </div>
     </div>
 
     <div
@@ -216,13 +184,14 @@ const IndexPage = () => (
         display: "flex",
         flexWrap: "wrap",
         width: "100%",
+        marginTop: 80,
         marginBottom: 20,
         padding: 20,
         justifyContent: "space-around",
       }}
       id="testimonials"
     >
-      <h2>Seriously? See what the users say about it</h2>
+      <h2>Happy user reviews!</h2>
     </div>
     <div
       style={{
@@ -268,26 +237,6 @@ const IndexPage = () => (
           I've been using CCMenu for a while but that has issues as it only monitors the default branch in CircelCI. I wanted the abiilty to monitor specific named branches such as "release" or "preflight", and also any personal branches such as "foo-*". Tempomat tool totally does all of that!
         </div>
         <h4 style={{ marginTop: 20, fontWeight: "bold" }}>by Nigel1066</h4>
-      </div>
-    </div>
-    <div
-      style={{
-        display: `flex`,
-        flexDirection: `column`,
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <div className="button-wrapper" style={{ marginBottom: 100 }}>
-        <a
-          href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
-          alt="Mac app store link"
-          className="button"
-        >
-          <span className="rainbow">
-            Take my money already!
-          </span>
-        </a>
       </div>
     </div>
   </Layout>

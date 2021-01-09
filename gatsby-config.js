@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Tempomat`,
+    title: `Tempomat: monitor CI builds and website health checks`,
     description: `Native macOS app for monitoring continuous integration systems`,
+    keywords: [`Continuous Integration`, `health check`, `notification`, `github`, `menu bar`, `circleci`, `ping`],
     siteUrl: `https://tempomat.dev`,
     author: `Oscar Franco`,
   },
