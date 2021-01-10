@@ -26,6 +26,9 @@ const IndexPage = () => (
         <a href="https://twitter.com/tempomat_app" className="navbar-button">Twitter</a>
       </div>
       <div>
+        <a href="emailto:ospfranco@protonmail.com?subject=Tempomat Support (Web)" className="navbar-button">Support</a>
+      </div>
+      <div>
         <a
           href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
           className="navbar-button"
