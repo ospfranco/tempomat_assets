@@ -35,9 +35,6 @@ const Layout = ({ children }) => {
           <Link to="/privacy" alt="Privacy Link" style={{color: 'white', textDecoration: 'none', padding: 20}}>
             Privacy Policy
           </Link>
-          <Link to="/support" alt="Support Link" style={{color: 'white', textDecoration: 'none', padding: 20}}>
-            Support
-          </Link>
         </div>
       </footer>
     </>

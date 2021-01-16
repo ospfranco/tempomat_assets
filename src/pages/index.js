@@ -4,10 +4,10 @@ import SEO from "../components/seo";
 
 import macButton from "../images/DownloadMac.svg";
 import providers from "../images/providers.png";
-import abstractPreview from "../images/abstractPreview.png";
+import abstractPreview from "../images/abstractPreview.jpg";
 import Icon from "../images/Icon.png";
-import feature1 from "../images/feature1.png"
-import feature2 from "../images/feature2.png"
+import feature1 from "../images/feature1.jpg";
+import feature2 from "../images/feature2.jpg";
 
 const IndexPage = () => (
   <Layout>
@@ -24,10 +24,7 @@ const IndexPage = () => (
           Tempomat
         </span>
       </div>
-      <div>
-        <a href="https://twitter.com/tempomat_app" className="navbar-button">Twitter</a>
-      </div>
-      <div>
+      <div className="mr-2">
         <a href="emailto:ospfranco@protonmail.com?subject=Tempomat Support (Web)" className="navbar-button">Support</a>
       </div>
       <div>
@@ -56,7 +53,7 @@ const IndexPage = () => (
           alt="Mac app store link"
           className="flex justify-center mt-12"
         >
-          <img src={macButton} className="w-80" alt="Buy on app store button" />
+          <img src={macButton} className="h-16" alt="Buy on app store button" />
         </a>
 
         {/* ////////////////// Second item ///////////////////////////  */}
@@ -199,6 +196,15 @@ const IndexPage = () => (
           "I've been using CCMenu for a while but that has issues as it only monitors the default branch in CircelCI. I wanted the abiilty to monitor specific named branches such as "release" or "preflight", and also any personal branches such as "foo-*". Tempomat tool totally does all of that!" - Nigel1066
         </div>
       </div>
+
+      <a
+          href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
+          alt="Mac app store link"
+          className="flex justify-center mt-12"
+        >
+          <img src={macButton} className="h-16" alt="Buy on app store button" />
+        </a>
+        
     </div>
 
 
