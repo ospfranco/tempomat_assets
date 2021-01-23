@@ -2,12 +2,12 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-import macButton from "../images/DownloadMac.svg";
 import providers from "../images/providers.png";
 import abstractPreview from "../images/abstractPreview.jpg";
 import Icon from "../images/Icon.png";
 import feature1 from "../images/feature1.jpg";
 import feature2 from "../images/feature2.jpg";
+import profile from "../images/profile.jpg";
 
 const IndexPage = () => (
   <Layout>
@@ -17,21 +17,19 @@ const IndexPage = () => (
     />
 
     {/* /////////////////////// NAVBAR /////////////////////////////////// */}
-    <nav className="navbar">
+
+    <nav className="flex flex-row fixed w-screen bg-black items-center p-4">
       <img src={Icon} style={{ height: 30, width: 30, marginRight: 10, marginBottom: 0 }} alt="app icon" />
       <div style={{ flex: 1 }}>
         <span className="rainbow" style={{ fontSize: 24 }}>
           Tempomat
         </span>
       </div>
-      <div className="mr-2">
-        <a href="emailto:ospfranco@protonmail.com?subject=Tempomat Support (Web)" className="navbar-button">Support</a>
-      </div>
       <div>
         <a
-          href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
-          className="navbar-button"
-          style={{ backgroundColor: 'white', borderRadius: 5, padding: 10, color: '#292f3a' }}
+          href="https://github.com/ospfranco/tempomat/releases"
+          className="bg-white px-4 py-2 rounded mr-2 text-black"
+          onclick="_paq.push(['trackEvent', 'get it']);"
         >Get it</a>
       </div>
     </nav>
@@ -45,16 +43,29 @@ const IndexPage = () => (
           Your CI builds and deployments on your desktop
         </p>
         <p className="text-lg">
-          Tempomat is a macOS menu bar app that <span className="text-yellow-500 font-semibold">polls your continuous integration</span> system and/or deployments, condenses the information and notifies you when <span className="text-red-500 font-semibold">something breaks</span>. <br /><br /> <span className="text-green-500 font-semibold">Your time is valuable</span> don't waste it waiting for slow web apps.
+          Tempomat is a macOS menu bar app that <span className="text-yellow-500">polls your continuous integration</span> system and/or deployments, condenses the information and notifies you when <span className="text-red-500">something breaks</span>. <br /><br /> <span className="text-green-500">Your time is valuable</span> don't waste it waiting for slow web apps.
         </p>
 
-        <a
-          href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
-          alt="Mac app store link"
-          className="flex justify-center mt-12"
-        >
-          <img src={macButton} className="h-16" alt="Buy on app store button" />
-        </a>
+        <div className="flex self-center my-12">
+          <a
+            href="https://github.com/ospfranco/tempomat/releases"
+            alt="Download link"
+            className="rounded bg-black text-white w-52 text-center px-4 py-2 self-center hover:bg-gray-700 mr-2"
+            onclick="_paq.push(['trackEvent', 'get it']);"
+          >
+            Get it
+          </a>
+
+          <a
+            href="https://github.com/ospfranco/tempomat/releases"
+            alt="Download link"
+            className="my-4 rounded border border-black w-52 text-center px-4 py-2 self-center hover:bg-gray-700 ml-2"
+            onclick="_paq.push(['trackEvent', 'source']);"
+          >
+            Source
+          </a>
+
+        </div>
 
         {/* ////////////////// Second item ///////////////////////////  */}
         <div className="lg:flex items-center mt-12">
@@ -85,69 +96,73 @@ const IndexPage = () => (
               List of features
             </p>
             <ul className="list-disc">
-
               <li>
                 It is{" "}
                 <span className="rainbow" style={{ fontWeight: "bold" }}>
                   FAST
-              </span>
-              , it's native macOS app.
-            </li>
+                </span>
+                , it's native macOS app.
+              </li>
               <li>
                 Receive{" "}
                 <span className="rainbow" style={{ fontWeight: "bold" }}>
                   NOTIFICATIONS
-              </span>{" "}
-              on failures or restorations.
-            </li>
+                </span>{" "}
+                on failures or restorations.
+              </li>
               <li>
                 Not a another SaaS,{" "}
                 <span className="rainbow" style={{ fontWeight: "bold" }}>
                   BUY IT ONCE
-              </span>{" "}
-               and it is yours.
-            </li>
+                </span>{" "}
+                and it is yours.
+              </li>
               <li>
                 Create your own{" "}
                 <span className="rainbow" style={{ fontWeight: "bold" }}>
                   CUSTOM FILTERS
-              </span>{" "}
-              using regexes, even do invert filtering.
-            </li>
+                </span>{" "}
+                using regexes, even do invert filtering.
+              </li>
               <li>
                 Everything is{" "}
                 <span className="rainbow" style={{ fontWeight: "bold" }}>
                   STORED ENCRYPTED
-              </span>{" "}
-              in the macOS keychain.
-            </li>
+                </span>{" "}
+                in the macOS keychain.
+              </li>
               <li>
                 Look at it! It's{" "}
                 <span className="rainbow" style={{ fontWeight: "bold" }}>
                   BEAUTIFUL
-              </span>
-              , no other words to describe it.
-            </li>
+                </span>
+                , no other words to describe it.
+              </li>
               <li>
                 Trigger a{" "}
                 <span className="rainbow" style={{ fontWeight: "bold" }}>
                   REBUILD
-              </span>
-              , right from your desktop.
-            </li>
+                </span>
+                , right from your desktop.
+              </li>
               <li>
                 <span className="rainbow" style={{ fontWeight: "bold" }}>
                   NO TRACKING
-              </span>
-              , your data and your privacy are a priority.
-            </li>
-              {/* <li>
-              Supports all the{" "}
-              <span className="rainbow" style={{ fontWeight: "bold" }}>
-                CI SYSTEMS
-              </span>
-              ... ok, not all, but many:
-            </li> */}
+                </span>
+                , your data and your privacy are a priority.
+              </li>
+              <li>
+                <span className="rainbow" style={{ fontWeight: "bold" }}>
+                  IT'S FREE
+                </span>
+                , 0 cost, nada
+              </li>
+              <li>
+                <span className="rainbow" style={{ fontWeight: "bold" }}>
+                  IT'S OPEN SOURCE
+                </span>
+                , you can contribute to it
+              </li>
             </ul>
           </div>
 
@@ -197,16 +212,18 @@ const IndexPage = () => (
         </div>
       </div>
 
-      <a
-          href="https://apps.apple.com/de/app/tempomat-circleci-toolbar/id1509296762?l=en&mt=12"
-          alt="Mac app store link"
-          className="flex justify-center mt-12"
-        >
-          <img src={macButton} className="h-16" alt="Buy on app store button" />
-        </a>
-        
-    </div>
 
+      <div className="my-12 flex flex-col items-center">
+        <div>Created by <span className="font-bold">Oscar Franco</span></div>
+        <img src={profile} className="h-24 w-24 rounded-full my-2"/>
+        <div>Follow me on</div>
+
+          <a href="www.twitter.com/ospfranco" className="font-bold">Twitter</a>
+          <a href="www.github.com/ospfranco" className="font-bold">Github</a>
+          <a href="www.ospfranco.io" className="font-bold">Blog</a>
+        
+      </div>
+    </div>
 
   </Layout>
 );

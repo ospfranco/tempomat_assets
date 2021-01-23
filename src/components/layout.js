@@ -19,9 +19,7 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       
       <footer
-        style={{
-          backgroundColor: '#313131'
-        }}
+        className="bg-black"
       >
         <div
           style={{
