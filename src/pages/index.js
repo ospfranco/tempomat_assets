@@ -3,11 +3,11 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import providers from "../images/providers.png";
-import abstractPreview from "../images/abstractPreview.jpg";
+import abstractPreview from "../images/abstractPreview.webp";
 import Icon from "../images/Icon.png";
-import feature1 from "../images/feature1.jpg";
-import feature2 from "../images/feature2.jpg";
-import profile from "../images/profile.jpg";
+import feature1 from "../images/feature1.webp";
+import feature2 from "../images/feature2.webp";
+import profile from "../images/profile.webp";
 
 const IndexPage = () => (
   <Layout>
