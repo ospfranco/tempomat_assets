@@ -18,7 +18,7 @@ const IndexPage = () => (
 
     {/* /////////////////////// NAVBAR /////////////////////////////////// */}
 
-    <nav className="flex flex-row fixed w-screen bg-black items-center p-4">
+    <nav className="flex flex-row fixed w-screen bg-black items-center py-4 px-8">
       <img src={Icon} style={{ height: 30, width: 30, marginRight: 10, marginBottom: 0 }} alt="app icon" />
       <div style={{ flex: 1 }}>
         <span className="rainbow" style={{ fontSize: 24 }}>
