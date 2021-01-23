@@ -224,7 +224,7 @@ const IndexPage = () => (
 
           <a href="https://www.twitter.com/ospfranco" className="font-bold">Twitter</a>
           <a href="https://www.github.com/ospfranco" className="font-bold">Github</a>
-          <a href="https://www.ospfranco.github.io" className="font-bold">Blog</a>
+          <a href="https://ospfranco.github.io" className="font-bold">Blog</a>
         
       </div>
     </div>
