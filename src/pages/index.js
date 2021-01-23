@@ -54,7 +54,7 @@ const IndexPage = () => (
           <a
             href="https://github.com/ospfranco/tempomat/releases"
             alt="Download link"
-            className="rounded bg-black text-white w-52 text-center px-4 py-2 self-center hover:bg-gray-700 mr-2"
+            className="rounded bg-black text-white w-24 md:w-52 text-center px-4 py-2 self-center hover:bg-gray-700 mr-2"
             onclick="_paq.push(['trackEvent', 'get it']);"
           >
             Get it
@@ -63,7 +63,7 @@ const IndexPage = () => (
           <a
             href="https://github.com/ospfranco/tempomat/releases"
             alt="Download link"
-            className="my-4 rounded border border-black w-52 text-center px-4 py-2 self-center hover:bg-gray-700 ml-2"
+            className="my-4 rounded border border-black w-24 md:w-52 text-center px-4 py-2 self-center hover:bg-gray-700 ml-2"
             onclick="_paq.push(['trackEvent', 'source']);"
           >
             Source
@@ -222,9 +222,9 @@ const IndexPage = () => (
         <img src={profile} className="h-24 w-24 rounded-full my-2" alt="profile pic oscar"/>
         <div>Follow me on</div>
 
-          <a href="www.twitter.com/ospfranco" className="font-bold">Twitter</a>
-          <a href="www.github.com/ospfranco" className="font-bold">Github</a>
-          <a href="www.ospfranco.io" className="font-bold">Blog</a>
+          <a href="https://www.twitter.com/ospfranco" className="font-bold">Twitter</a>
+          <a href="https://www.github.com/ospfranco" className="font-bold">Github</a>
+          <a href="https://www.ospfranco.github.io" className="font-bold">Blog</a>
         
       </div>
     </div>
