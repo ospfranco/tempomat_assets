@@ -37,7 +37,13 @@ const IndexPage = () => (
 
     <div className="my-20 md:mt-32 flex flex-col items-center">
       <div className="p-4 w-full lg:w-3/4 xl:w-2/3 flex flex-col">
-        <img id="preview" src={abstractPreview} className="rounded w-full object-contain shadow-xl lg:w-2/3 self-center" alt="Big preview" />
+
+        <img 
+          id="preview" 
+          src={abstractPreview}
+          className="rounded w-full object-contain shadow-xl lg:w-2/3 mt-2 mb-20 self-center" 
+          alt="Big preview" 
+        />
 
         <p className="font-bold text-4xl">
           Your CI builds and deployments on your desktop
