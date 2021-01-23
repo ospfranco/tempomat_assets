@@ -2,13 +2,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-import "./tailwind.css"
+import "./layout.css"
 
 const Layout = ({ children }) => {
-
   return (
     <>
-      
       <main>{children}</main>
       
       <footer

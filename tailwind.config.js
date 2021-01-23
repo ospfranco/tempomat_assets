@@ -1,5 +1,7 @@
 module.exports = {
-  purge: [],
+  purge: [
+    './src/pages/**.js'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     boxShadow: {

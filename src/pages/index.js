@@ -18,12 +18,10 @@ const IndexPage = () => (
 
     {/* /////////////////////// NAVBAR /////////////////////////////////// */}
 
-    <nav className="flex flex-row fixed w-screen bg-black items-center py-4 px-8">
+    <nav className="flex flex-row w-screen bg-black items-center py-4 px-8" style={{position: 'fixed', top: 0}}>
       <img src={Icon} style={{ height: 30, width: 30, marginRight: 10, marginBottom: 0 }} alt="app icon" />
-      <div style={{ flex: 1 }}>
-        <span className="rainbow" style={{ fontSize: 24 }}>
-          Tempomat
-        </span>
+      <div className="flex-1 text-white text-2xl font-semibold">
+        Tempomat
       </div>
       <div>
         <a
@@ -45,7 +43,7 @@ const IndexPage = () => (
           alt="Big preview" 
         />
 
-        <p className="font-bold text-4xl">
+        <p className="font-bold text-4xl mb-4">
           Your CI builds and deployments on your desktop
         </p>
         <p className="text-lg">
@@ -80,16 +78,16 @@ const IndexPage = () => (
             <p className="font-bold text-3xl">
               All the important info a click away
             </p>
-            <ul className="list-disc">
-              <li>CI provider</li>
-              <li>Build status</li>
-              <li>Repository information</li>
-              <li>Branch name</li>
-              <li>Build number</li>
-              <li>Individual build checks</li>
-              <li>Build date</li>
-              <li>Trigger rebuilds</li>
-              <li><b className="text-green-400">*NEW*</b> HTTP ping checks</li>
+            <ul className="list-disc ">
+              <li className="my-2 ml-4">CI provider</li>
+              <li className="my-2 ml-4">Build status</li>
+              <li className="my-2 ml-4">Repository information</li>
+              <li className="my-2 ml-4">Branch name</li>
+              <li className="my-2 ml-4">Build number</li>
+              <li className="my-2 ml-4">Individual build checks</li>
+              <li className="my-2 ml-4">Build date</li>
+              <li className="my-2 ml-4">Trigger rebuilds</li>
+              <li className="my-2 ml-4"><b className="text-green-400">*NEW*</b> HTTP ping checks</li>
             </ul>
           </div>
         </div>
@@ -102,69 +100,69 @@ const IndexPage = () => (
               List of features
             </p>
             <ul className="list-disc">
-              <li>
+              <li className="my-2 ml-4">
                 It is{" "}
-                <span className="rainbow" style={{ fontWeight: "bold" }}>
+                <span className="font-semibold">
                   FAST
                 </span>
                 , it's native macOS app.
               </li>
-              <li>
+              <li className="my-2 ml-4">
                 Receive{" "}
-                <span className="rainbow" style={{ fontWeight: "bold" }}>
+                <span className="font-semibold">
                   NOTIFICATIONS
                 </span>{" "}
                 on failures or restorations.
               </li>
-              <li>
+              <li className="my-2 ml-4">
                 Not a another SaaS,{" "}
-                <span className="rainbow" style={{ fontWeight: "bold" }}>
+                <span className="font-semibold">
                   BUY IT ONCE
                 </span>{" "}
                 and it is yours.
               </li>
-              <li>
+              <li className="my-2 ml-4">
                 Create your own{" "}
-                <span className="rainbow" style={{ fontWeight: "bold" }}>
+                <span className="font-semibold">
                   CUSTOM FILTERS
                 </span>{" "}
                 using regexes, even do invert filtering.
               </li>
-              <li>
+              <li className="my-2 ml-4">
                 Everything is{" "}
-                <span className="rainbow" style={{ fontWeight: "bold" }}>
+                <span className="font-semibold">
                   STORED ENCRYPTED
                 </span>{" "}
                 in the macOS keychain.
               </li>
-              <li>
+              <li className="my-2 ml-4">
                 Look at it! It's{" "}
-                <span className="rainbow" style={{ fontWeight: "bold" }}>
+                <span className="font-semibold">
                   BEAUTIFUL
                 </span>
                 , no other words to describe it.
               </li>
-              <li>
+              <li className="my-2 ml-4">
                 Trigger a{" "}
-                <span className="rainbow" style={{ fontWeight: "bold" }}>
+                <span className="font-semibold">
                   REBUILD
                 </span>
                 , right from your desktop.
               </li>
-              <li>
-                <span className="rainbow" style={{ fontWeight: "bold" }}>
+              <li className="my-2 ml-4">
+                <span className="font-semibold">
                   NO TRACKING
                 </span>
                 , your data and your privacy are a priority.
               </li>
-              <li>
-                <span className="rainbow" style={{ fontWeight: "bold" }}>
+              <li className="my-2 ml-4">
+                <span className="font-semibold">
                   IT'S FREE
                 </span>
                 , 0 cost, nada
               </li>
-              <li>
-                <span className="rainbow" style={{ fontWeight: "bold" }}>
+              <li className="my-2 ml-4">
+                <span className="font-semibold">
                   IT'S OPEN SOURCE
                 </span>
                 , you can contribute to it
@@ -221,7 +219,7 @@ const IndexPage = () => (
 
       <div className="my-12 flex flex-col items-center">
         <div>Created by <span className="font-bold">Oscar Franco</span></div>
-        <img src={profile} className="h-24 w-24 rounded-full my-2"/>
+        <img src={profile} className="h-24 w-24 rounded-full my-2" alt="profile pic oscar"/>
         <div>Follow me on</div>
 
           <a href="www.twitter.com/ospfranco" className="font-bold">Twitter</a>
