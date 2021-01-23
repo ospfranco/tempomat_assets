@@ -44,17 +44,17 @@ const IndexPage = () => (
         />
 
         <p className="font-bold text-4xl mb-4">
-          Your CI builds and deployments on your desktop
+          CI builds and deployments on your desktop
         </p>
         <p className="text-lg">
-          Tempomat is a macOS menu bar app that <span className="text-yellow-500">polls your continuous integration</span> system and/or deployments, condenses the information and notifies you when <span className="text-red-500">something breaks</span>. <br /><br /> <span className="text-green-500">Your time is valuable</span> don't waste it waiting for slow web apps.
+          Tempomat is a macOS menu bar app that <span className="text-yellow-500">polls your continuous integration</span> system and/or deployments, condenses the information and notifies you when <span className="text-red-500">something breaks</span>. <br /><br /> <span className="text-green-500">Your time is valuable</span>, don't waste it waiting for slow web apps.
         </p>
 
         <div className="flex self-center my-12">
           <a
             href="https://github.com/ospfranco/tempomat/releases"
             alt="Download link"
-            className="rounded bg-black text-white w-24 md:w-52 text-center px-4 py-2 self-center hover:bg-gray-700 mr-2"
+            className="rounded transition bg-black hover:shadow-lg text-white w-24 md:w-52 text-center px-4 py-2 self-center mr-2"
             onclick="_paq.push(['trackEvent', 'get it']);"
           >
             Get it
@@ -63,107 +63,109 @@ const IndexPage = () => (
           <a
             href="https://github.com/ospfranco/tempomat/releases"
             alt="Download link"
-            className="my-4 rounded border border-black w-24 md:w-52 text-center px-4 py-2 self-center hover:bg-gray-700 ml-2"
+            className="my-4 rounded border border-black w-24 md:w-52 text-center px-4 py-2 self-center transition hover:shadow-lg ml-2"
             onclick="_paq.push(['trackEvent', 'source']);"
           >
             Source
           </a>
 
         </div>
+        <div className="mb-12 flex flex-row items-center self-center">
+          <img src={profile} className="h-24 w-24 rounded-full my-2" alt="profile pic oscar"/>
+          <div className="ml-3">
+            <div>Created by <span className="font-bold">Oscar Franco</span></div>
+            <a href="https://www.twitter.com/ospfranco" className="text-blue-500">Twitter</a>
+            <a href="https://www.github.com/ospfranco" className="text-blue-500 ml-5">Github</a>
+            <a href="https://ospfranco.github.io" className="text-blue-500 ml-5">Blog</a>
+          </div>
+        </div>
 
         {/* ////////////////// Second item ///////////////////////////  */}
-        <div className="lg:flex items-center mt-12">
+        <div className="lg:flex items-center mt-24">
           <img src={feature1} className="lg:h-96 lg:w-1/2 object-contain" alt="feature 1" />
           <div className="lg:w-1/2 lg:ml-8">
-            <p className="font-bold text-3xl">
-              All the important info a click away
+            <p className="font-bold text-3xl mb-6">
+              Important info a click away
             </p>
             <ul className="list-disc ">
-              <li className="my-2 ml-4">CI provider</li>
-              <li className="my-2 ml-4">Build status</li>
-              <li className="my-2 ml-4">Repository information</li>
-              <li className="my-2 ml-4">Branch name</li>
-              <li className="my-2 ml-4">Build number</li>
-              <li className="my-2 ml-4">Individual build checks</li>
-              <li className="my-2 ml-4">Build date</li>
-              <li className="my-2 ml-4">Trigger rebuilds</li>
-              <li className="my-2 ml-4"><b className="text-green-400">*NEW*</b> HTTP ping checks</li>
+              <li className="my-2">CI provider</li>
+              <li className="my-2">Build status</li>
+              <li className="my-2">Repository information</li>
+              <li className="my-2">Branch name</li>
+              <li className="my-2">Build number</li>
+              <li className="my-2">Individual build checks</li>
+              <li className="my-2">Build date</li>
+              <li className="my-2">Trigger rebuilds</li>
+              <li className="my-2">HTTP ping checks</li>
             </ul>
           </div>
         </div>
 
 
         {/* ////////////////// Third item ///////////////////////////  */}
-        <div className="flex flex-col-reverse flex-reverse lg:flex-row items-center mt-12">
+        <div className="flex flex-col-reverse flex-reverse lg:flex-row items-center mt-24">
           <div className="lg:w-1/2 lg:mr-8">
-            <p className="font-bold text-3xl">
+            <p className="font-bold text-3xl mb-6">
               List of features
             </p>
             <ul className="list-disc">
-              <li className="my-2 ml-4">
+              <li className="my-2">
                 It is{" "}
                 <span className="font-semibold">
                   FAST
                 </span>
                 , it's native macOS app.
               </li>
-              <li className="my-2 ml-4">
+              <li className="my-2">
                 Receive{" "}
                 <span className="font-semibold">
                   NOTIFICATIONS
                 </span>{" "}
                 on failures or restorations.
               </li>
-              <li className="my-2 ml-4">
-                Not a another SaaS,{" "}
-                <span className="font-semibold">
-                  BUY IT ONCE
-                </span>{" "}
-                and it is yours.
-              </li>
-              <li className="my-2 ml-4">
+              <li className="my-2">
                 Create your own{" "}
                 <span className="font-semibold">
                   CUSTOM FILTERS
                 </span>{" "}
-                using regexes, even do invert filtering.
+                using regexes
               </li>
-              <li className="my-2 ml-4">
+              <li className="my-2">
                 Everything is{" "}
                 <span className="font-semibold">
                   STORED ENCRYPTED
                 </span>{" "}
                 in the macOS keychain.
               </li>
-              <li className="my-2 ml-4">
+              <li className="my-2">
                 Look at it! It's{" "}
                 <span className="font-semibold">
                   BEAUTIFUL
                 </span>
                 , no other words to describe it.
               </li>
-              <li className="my-2 ml-4">
+              <li className="my-2">
                 Trigger a{" "}
                 <span className="font-semibold">
                   REBUILD
                 </span>
                 , right from your desktop.
               </li>
-              <li className="my-2 ml-4">
+              <li className="my-2">
                 <span className="font-semibold">
                   NO TRACKING
                 </span>
                 , your data and your privacy are a priority.
               </li>
-              <li className="my-2 ml-4">
+              <li className="my-2">
+                completely {" "}
                 <span className="font-semibold">
-                  IT'S FREE
+                  FREE
                 </span>
-                , 0 cost, nada
               </li>
-              <li className="my-2 ml-4">
+              <li className="my-2">
                 <span className="font-semibold">
-                  IT'S OPEN SOURCE
+                  OPEN SOURCE
                 </span>
                 , you can contribute to it
               </li>
@@ -174,12 +176,12 @@ const IndexPage = () => (
         </div>
 
         {/* ////////////////// Fourth item ///////////////////////////  */}
-        <div className="flex flex-col lg:flex-row items-center mt-12">
+        <div className="flex flex-col lg:flex-row items-center mt-20">
           <img src={providers} className="w-64 lg:h-80 lg:w-1/3 object-contain self-center" alt="providers" />
           <div className="lg:w-2/3 lg:ml-24">
-            <p className="font-bold text-3xl">
+            <div className="font-bold text-3xl mb-6">
               Supports many continuous providers
-            </p>
+            </div>
             <p>
               Tempomat integrates tightly with each's service API, this allows for fetching of detailed information and dizzying speed, no need to wait for slow web interfaces to download only to show you your build has failed... yuck!
             </p>
@@ -187,17 +189,17 @@ const IndexPage = () => (
         </div>
 
         {/* ////////////////// Testimonials ///////////////////////////  */}
-        <p className="font-bold text-3xl mt-24">
-          Here is what happy devs have to say about it
-        </p>
-        <h3 className="mb-1 text-green-600"><span className="text-green-400">5</span><span className="text-lg text-gray-600">/5</span> Must have for developers </h3>
+        <div className="font-bold text-3xl mt-20 mb-6">
+          User Reviews
+        </div>
+        <h3 className="mb-1 font-semibold"><span className="text-green-400 text-2xl">5</span><span className="text-lg text-gray-600">/5</span> Must have for developers </h3>
         <div className="italic">
           "One of those tools that you don't realize how convenient it makes life
           until you try it. Works great with CircleCI and saves time having to
           wait and check the build status manually." - srolija
         </div>
 
-        <h3 className="mb-1 mt-8 text-green-600"><span className="text-green-400">5</span><span className="text-lg text-gray-600">/5</span> A simple tool that adds so much DX value</h3>
+        <h3 className="mb-1 mt-8 font-semibold"><span className="text-green-400 text-2xl">5</span><span className="text-lg text-gray-600">/5</span> A simple tool that adds so much DX value</h3>
         <div className="italic">
           "I have no idea why a tool like this has not been published earlier.
           Having a unobtrusive reminder of CI status is extremely useful. While
@@ -210,23 +212,12 @@ const IndexPage = () => (
           CircleCI." - twgraham
         </div>
 
-        <h3 className="mb-1 mt-8 text-green-600"><span className="text-green-400">5</span><span className="text-lg text-gray-600">/5</span> Great tool for monitoring CI workflows</h3>
+        <h3 className="mb-1 mt-8 font-semibold"><span className="text-green-400 text-2xl">5</span><span className="text-lg text-gray-600">/5</span> Great tool for monitoring CI workflows</h3>
         <div className="italic">
           "I've been using CCMenu for a while but that has issues as it only monitors the default branch in CircelCI. I wanted the abiilty to monitor specific named branches such as "release" or "preflight", and also any personal branches such as "foo-*". Tempomat tool totally does all of that!" - Nigel1066
         </div>
       </div>
 
-
-      <div className="my-12 flex flex-col items-center">
-        <div>Created by <span className="font-bold">Oscar Franco</span></div>
-        <img src={profile} className="h-24 w-24 rounded-full my-2" alt="profile pic oscar"/>
-        <div>Follow me on</div>
-
-          <a href="https://www.twitter.com/ospfranco" className="font-bold">Twitter</a>
-          <a href="https://www.github.com/ospfranco" className="font-bold">Github</a>
-          <a href="https://ospfranco.github.io" className="font-bold">Blog</a>
-        
-      </div>
     </div>
 
   </Layout>
