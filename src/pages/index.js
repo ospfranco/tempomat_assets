@@ -7,7 +7,7 @@ import feature1 from "../images/feature1.webp";
 import feature2 from "../images/feature2.webp";
 import profile from "../images/profile.webp";
 import tempo from "../images/tempo.webp";
-import apple from "../images/apple.svg";
+import apple from "../images/Apple.svg";
 import bluetooth from "../images/bluetooth.svg";
 import wifi from "../images/wifi.svg";
 import controlCenter from "../images/controlCenter.svg";
