@@ -8,3 +8,11 @@ html {
   @apply text-gray-800 font-sans;
   font-weight: 300;
 }
+
+.previewImage {
+  @apply absolute max-w-none;
+  width: 700px;
+  top: 0;
+  left: 60%;
+  -webkit-transform: translate(-60%, 0);
+}

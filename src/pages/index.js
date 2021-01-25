@@ -3,11 +3,15 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import providers from "../images/providers.png";
-import abstractPreview from "../images/abstractPreview.webp";
-import Icon from "../images/Icon.png";
 import feature1 from "../images/feature1.webp";
 import feature2 from "../images/feature2.webp";
 import profile from "../images/profile.webp";
+import tempo from "../images/tempo.webp";
+import apple from "../images/apple.svg";
+import bluetooth from "../images/bluetooth.svg";
+import wifi from "../images/wifi.svg";
+import controlCenter from "../images/controlCenter.svg";
+import background from "../images/background.webp";
 
 const IndexPage = () => (
   <Layout>
@@ -18,7 +22,7 @@ const IndexPage = () => (
 
     {/* /////////////////////// NAVBAR /////////////////////////////////// */}
 
-    <nav className="flex flex-row w-screen bg-black items-center py-4 px-8" style={{position: 'fixed', top: 0}}>
+    {/* <nav className="flex flex-row w-screen bg-black items-center py-4 px-8" style={{position: 'fixed', top: 0}}>
       <img src={Icon} style={{ height: 30, width: 30, marginRight: 10, marginBottom: 0 }} alt="app icon" />
       <div className="flex-1 text-white text-2xl font-semibold">
         Tempomat
@@ -30,58 +34,107 @@ const IndexPage = () => (
           onclick="_paq.push(['trackEvent', 'get it']);"
         >Get it</a>
       </div>
-    </nav>
+    </nav> */}
     {/* /////////////////////// NAVBAR /////////////////////////////////// */}
+    <div className="flex h-6 border-b border-gray-300 shadow bg-gray-100 items-center px-4">
+      <img src={apple} className="h-4" />
+      <div className="font-semibold pl-4 flex-1">
+        Tempomat
+      </div>
+      <div className="relative w-3 h-4 px-3 bg-blue-500">
+        <img src={tempo} className="previewImage" />
+      </div>
+      <img src={bluetooth} className="h-4 px-3"/>
+      <img src={wifi} className="h-3 px-3"/>
+      <img src={controlCenter} className="h-3 px-3"/>
+      <div className="font-sans text-sm px-3">
+        Mon 25. Jan 19:01
+      </div>
+    </div>
 
-    <div className="my-20 md:mt-32 flex flex-col items-center">
-      <div className="p-4 w-full lg:w-3/4 xl:w-2/3 flex flex-col">
+    <div className="flex flex-col items-center">
+        <div className="absolute invisible xl:visible w-1/2 flex flex-col items-center" style={{left: 40, top: 200}}>
+          <div>
+            <p className="font-bold text-white text-4xl mb-4" style={{textShadow: '2px 2px 30px #333'}}>
+              CI builds and deployments on your desktop
+            </p>
+            <p className="text-lg text-white">
+              Tempomat is a macOS menu bar app that polls your continuous integration system and/or deployments, condenses the information and notifies you when something breaks. <br />Your time is valuable, don't waste it waiting for slow web apps.
+            </p>
+          </div>
+          <div className="flex self-center my-12">
+            <a
+              href="https://github.com/ospfranco/tempomat/releases"
+              alt="Download link"
+              className="rounded transition bg-black hover:shadow-lg text-white w-24 md:w-52 text-center px-4 py-2 self-center mr-2"
+              onclick="_paq.push(['trackEvent', 'get it']);"
+            >
+              Get it
+            </a>
 
-        <img 
-          id="preview" 
-          src={abstractPreview}
-          className="rounded w-full object-contain shadow-xl lg:w-2/3 mt-2 mb-20 self-center" 
-          alt="Big preview" 
-        />
+            <a
+              href="https://github.com/ospfranco/tempomat/releases"
+              alt="Download link"
+              className="my-4 rounded border bg-white w-24 md:w-52 text-center px-4 py-2 self-center transition hover:shadow-lg ml-2"
+              onclick="_paq.push(['trackEvent', 'source']);"
+            >
+              Source
+            </a>
 
-        <p className="font-bold text-4xl mb-4">
-          CI builds and deployments on your desktop
-        </p>
-        <p className="text-lg">
-          Tempomat is a macOS menu bar app that <span className="text-yellow-500">polls your continuous integration</span> system and/or deployments, condenses the information and notifies you when <span className="text-red-500">something breaks</span>. <br /><br /> <span className="text-green-500">Your time is valuable</span>, don't waste it waiting for slow web apps.
-        </p>
-
-        <div className="flex self-center my-12">
-          <a
-            href="https://github.com/ospfranco/tempomat/releases"
-            alt="Download link"
-            className="rounded transition bg-black hover:shadow-lg text-white w-24 md:w-52 text-center px-4 py-2 self-center mr-2"
-            onclick="_paq.push(['trackEvent', 'get it']);"
-          >
-            Get it
-          </a>
-
-          <a
-            href="https://github.com/ospfranco/tempomat/releases"
-            alt="Download link"
-            className="my-4 rounded border border-black w-24 md:w-52 text-center px-4 py-2 self-center transition hover:shadow-lg ml-2"
-            onclick="_paq.push(['trackEvent', 'source']);"
-          >
-            Source
-          </a>
-
+          </div>
+          <div className="mb-12 flex flex-row items-center self-center">
+            <img src={profile} className="h-24 w-24 rounded-full my-2" alt="profile pic oscar"/>
+            <div className="ml-3">
+              <div>Created by <span className="font-bold">Oscar Franco</span></div>
+              <a href="https://www.twitter.com/ospfranco" className="text-blue-500 font-semibold">Twitter</a>
+              <a href="https://www.github.com/ospfranco" className="text-blue-500 font-semibold ml-5">Github</a>
+              <a href="https://ospfranco.github.io" className="text-blue-500 font-semibold ml-5">Blog</a>
+            </div>
+          </div>
         </div>
-        <div className="mb-12 flex flex-row items-center self-center">
-          <img src={profile} className="h-24 w-24 rounded-full my-2" alt="profile pic oscar"/>
-          <div className="ml-3">
-            <div>Created by <span className="font-bold">Oscar Franco</span></div>
-            <a href="https://www.twitter.com/ospfranco" className="text-blue-500">Twitter</a>
-            <a href="https://www.github.com/ospfranco" className="text-blue-500 ml-5">Github</a>
-            <a href="https://ospfranco.github.io" className="text-blue-500 ml-5">Blog</a>
+        <img src={background} className="w-full object-cover" style={{minHeight: 600}}/>
+      <div className="px-4 w-full lg:w-3/4 xl:w-2/3 flex flex-col">
+        <div className="xl:hidden flex flex-col items-center">
+          <p className="font-bold text-4xl mb-4">
+            CI builds and deployments on your desktop
+          </p>
+          <p className="text-lg">
+            Tempomat is a macOS menu bar app that <span className="text-yellow-500">polls your continuous integration</span> system and/or deployments, condenses the information and notifies you when <span className="text-red-500">something breaks</span>. <br /><br /> <span className="text-green-500">Your time is valuable</span>, don't waste it waiting for slow web apps.
+          </p>
+
+          <div className="flex self-center my-12">
+            <a
+              href="https://github.com/ospfranco/tempomat/releases"
+              alt="Download link"
+              className="rounded transition bg-black hover:shadow-lg text-white w-24 md:w-52 text-center px-4 py-2 self-center mr-2"
+              onclick="_paq.push(['trackEvent', 'get it']);"
+            >
+              Get it
+            </a>
+
+            <a
+              href="https://github.com/ospfranco/tempomat/releases"
+              alt="Download link"
+              className="my-4 rounded border border-black w-24 md:w-52 text-center px-4 py-2 self-center transition hover:shadow-lg ml-2"
+              onclick="_paq.push(['trackEvent', 'source']);"
+            >
+              Source
+            </a>
+          </div>
+
+          <div className="mb-12 flex flex-row items-center self-center">
+            <img src={profile} className="h-24 w-24 rounded-full my-2" alt="profile pic oscar"/>
+            <div className="ml-3">
+              <div>Created by <span className="font-bold">Oscar Franco</span></div>
+              <a href="https://www.twitter.com/ospfranco" className="text-blue-500">Twitter</a>
+              <a href="https://www.github.com/ospfranco" className="text-blue-500 ml-5">Github</a>
+              <a href="https://ospfranco.github.io" className="text-blue-500 ml-5">Blog</a>
+            </div>
           </div>
         </div>
 
         {/* ////////////////// Second item ///////////////////////////  */}
-        <div className="lg:flex items-center mt-24">
+        <div className="lg:flex items-center mt-24 xl:mt-2">
           <img src={feature1} className="lg:h-96 lg:w-1/2 object-contain" alt="feature 1" />
           <div className="lg:w-1/2 lg:ml-8">
             <p className="font-bold text-3xl mb-6">
