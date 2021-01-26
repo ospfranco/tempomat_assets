@@ -12,7 +12,17 @@ html {
 .previewImage {
   @apply absolute max-w-none;
   width: 700px;
-  top: 0;
+  top: 2px;
   left: 60%;
   -webkit-transform: translate(-60%, 0);
+}
+
+@media only screen and (max-width: 1080px) {
+  .previewImage {
+    @apply absolute max-w-none;
+    width: calc(90vw - 30px);
+    top: 3px;
+    left: 60%;
+    -webkit-transform: translate(-60%, 0);
+  } 
 }
