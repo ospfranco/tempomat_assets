@@ -20,7 +20,7 @@ export const DownloadButton = () => {
         onclick="_paq.push(['trackEvent', 'source']);"
         className="rounded bg-white w-52 px-4 py-2 transition hover:bg-gray-200 m-2 flex justify-center"
       >
-        <img src={github} className="mr-3" alt="github icon" />
+        <img src={github} className="mr-3 h-5" alt="github icon" />
               Source
           </a>
 
