@@ -20,8 +20,8 @@ html {
 @media only screen and (max-width: 1080px) {
   .previewImage {
     @apply absolute max-w-none;
-    width: calc(90vw - 30px);
-    top: 3px;
+    width: 90vw;
+    top: 6px;
     left: 60%;
     -webkit-transform: translate(-60%, 0);
   } 

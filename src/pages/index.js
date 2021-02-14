@@ -21,8 +21,8 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO
-        title="CI Monitoring"
-        description="macOS Continuous Integration monitoring: CircleCI, Travis CI, Github, AppCenter, Bitrise"
+        title="Continuous Integration Monitoring"
+        description="CircleCI, Travis CI, Github, AppCenter, Bitrise on your macOS desktop"
       />
 
       <div className="flex h-6 border-b border-gray-300 shadow bg-gray-200 items-center px-4">
@@ -33,8 +33,8 @@ const IndexPage = () => {
         <div className="relative w-3 h-5 m-4">
           <img src={tempo} className="previewImage" alt="Preview of Tempomat" />
         </div>
-        <img src={bluetooth} className="h-4 px-3" alt="bluetooth icon" />
-        <img src={wifi} className="h-3 px-3" alt="wifi icon" />
+        <img src={bluetooth} className="hidden md:block h-4 px-3" alt="bluetooth icon" />
+        <img src={wifi} className="h-3 px-3 hidden md:block " alt="wifi icon" />
         <img src={controlCenter} className="h-3 px-3" alt="control center icon" />
         <div className="font-sans text-sm px-3">
           Mon 25. Jan 19:01
