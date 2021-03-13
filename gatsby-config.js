@@ -7,7 +7,9 @@ module.exports = {
     author: `Oscar Franco`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet`
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,12 +25,13 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/Icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-postcss`
+    {
+      resolve: `gatsby-plugin-postcss`
+    }
+    
   ],
 }

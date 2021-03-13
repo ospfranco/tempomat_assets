@@ -14,6 +14,7 @@ import wifi from "../images/wifi.svg";
 import controlCenter from "../images/controlCenter.svg";
 import background from "../images/background.webp";
 import productHunt from "../images/productHunt.png";
+import desktop from "../images/desktop.svg";
 
 const IndexPage = () => {
   const [PHVisible, setPHVisible] = useState(true);
@@ -68,16 +69,16 @@ const IndexPage = () => {
           </div>
 
           {/* ////////////////// Product hunt banner ///////////////// */}
-          <TwitterBadge />
+          {/* <TwitterBadge /> */}
 
           {/* ////////////////// Second item ///////////////////////////  */}
           <div className="flex flex-col lg:flex-row items-center justify-center mt-24 xl:mt-2">
-            <img src={feature1} className="lg:h-96 lg:w-1/2 object-contain" alt="feature 1" />
-            <div className="lg:w-1/2 lg:ml-8">
+            <img src={desktop} className="lg:h-96 lg:w-1/2 object-contain" alt="feature 1" />
+            <div className="lg:w-1/2 lg:pl-12">
               <p className="font-bold text-3xl mb-6">
-                Important info a click away
-            </p>
-              <ul className="list-disc pl-6">
+                Access with just a glance
+              </p>
+              <ul>
                 <li className="my-2">CI provider</li>
                 <li className="my-2">Build status</li>
                 <li className="my-2">Repository information</li>
@@ -96,69 +97,69 @@ const IndexPage = () => {
           <div className="flex flex-col-reverse flex-reverse lg:flex-row items-center mt-24">
             <div className="lg:w-1/2 lg:mr-8">
               <p className="font-bold text-3xl mb-6">
-                List of features
+                It's awesome
             </p>
-              <ul className="list-disc pl-6">
+              <ul>
                 <li className="my-2">
                   It is{" "}
-                  <span className="font-semibold">
-                    FAST
+                  <span className="font-semibold text-purple-500">
+                    Too Fast
                 </span>
                 , it's native macOS app.
               </li>
                 <li className="my-2">
                   Receive{" "}
-                  <span className="font-semibold">
-                    NOTIFICATIONS
+                  <span className="font-semibold text-purple-500">
+                    Notifications
                 </span>{" "}
                 on failures or restorations.
               </li>
                 <li className="my-2">
                   Create your own{" "}
-                  <span className="font-semibold">
-                    CUSTOM FILTERS
+                  <span className="font-semibold text-purple-500">
+                    Custom Filters
                 </span>{" "}
                 using regexes
               </li>
                 <li className="my-2">
                   Everything is{" "}
-                  <span className="font-semibold">
-                    STORED ENCRYPTED
+                  <span className="font-semibold text-purple-500">
+                    Securely Stored
                 </span>{" "}
                 in the macOS keychain.
               </li>
                 <li className="my-2">
                   Look at it! It's{" "}
-                  <span className="font-semibold">
-                    BEAUTIFUL
+                  <span className="font-semibold text-purple-500">
+                    Beautiful
                 </span>
                 , no other words to describe it.
               </li>
                 <li className="my-2">
                   Trigger a{" "}
-                  <span className="font-semibold">
-                    REBUILD
+                  <span className="font-semibold text-purple-500">
+                    Rebuild
                 </span>
                 , right from your desktop.
               </li>
                 <li className="my-2">
-                  <span className="font-semibold">
-                    NO TRACKING
+                  <span className="font-semibold text-purple-500">
+                    No tracking
                 </span>
                 , your data and your privacy are a priority.
               </li>
-                <li className="my-2">
+                {/* <li className="my-2">
                   completely {" "}
-                  <span className="font-semibold">
+                  <span className="font-semibold text-purple-500 lowercase">
                     FREE
                 </span>
-                </li>
-                <li className="my-2">
+                </li> */}
+                {/* <li className="my-2">
                   <span className="font-semibold">
                     OPEN SOURCE
                 </span>
                 , you can contribute to it
-              </li>
+              </li> */}
               </ul>
             </div>
 
@@ -208,7 +209,7 @@ const IndexPage = () => {
         </div>
 
           <DownloadButton />
-          <TwitterBadge />
+          {/* <TwitterBadge /> */}
 
         </div>
 
