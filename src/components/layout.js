@@ -12,21 +12,17 @@ const Layout = ({ children }) => {
       </main>
       
       <footer
-        className="bg-black"
+        className="border-t flex flex-col items-center justify-center p-4 border-purple-200"
       >
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            display: `flex`,
-            alignItems: 'center',
-            justifyContent: `center`,
-          }}
-        >          
-          <Link to="/privacy" alt="Privacy Link" style={{color: 'white', textDecoration: 'none', padding: 20}}>
-            Privacy Policy
-          </Link>
+        <div className="font-semibold">
+          Tempomat
         </div>
+        <div className="text-sm mb-4">
+          2021
+        </div>
+        <Link to="/privacy" alt="Privacy Link" className="text-blue-500">
+          Privacy Policy
+        </Link>
       </footer>
     </>
   )

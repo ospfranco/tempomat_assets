@@ -13,6 +13,7 @@ import background from "../images/background.jpg";
 import productHunt from "../images/productHunt.png";
 import desktop from "../images/desktop.svg";
 import icon from "../images/Icon.png";
+import dev from "../images/dev.svg";
 
 const IndexPage = () => {
   const [PHVisible, setPHVisible] = useState(true);
@@ -26,9 +27,19 @@ const IndexPage = () => {
 
       <div className="flex h-6 border-b border-gray-300 shadow bg-gray-200 items-center px-6">
         <img src={apple} className="h-4" alt="apple logo" />
-        <div className="font-semibold pl-4 flex-1 font-sans">
+        <div className="pl-4 font-sans font-semibold text-sm">
           Tempomat
         </div>
+        <div className="pl-6 font-sans text-sm">
+          File
+        </div>
+        <div className="pl-6 font-sans text-sm">
+          Edit
+        </div>
+        <div className="pl-6 font-sans text-sm">
+          Help
+        </div>
+        <div className="flex-1"></div>
         <div className="relative w-3 h-5 m-4">
           <img src={tempo} className="previewImage" alt="Preview of Tempomat" />
         </div>
@@ -55,15 +66,21 @@ const IndexPage = () => {
           </div>
 
           <div className="flex flex-col align-center mt-20">
-            <div className="flex justify-center my-12">
+            
+
+            <p className="text-lg mt-12">
+              Tempomat monitors your <span className="text-purple-500 ">builds, deployments</span> and <span className="text-purple-500 ">pull requests</span>. It integrates directly with your continuous integration service and puts all the info right <span className="text-purple-500 ">on your Desktop</span>. It does this in the background, is always available and <span className="text-purple-500 ">saves you time</span> by notifying you when something breaks.
+            </p>
+
+            <div className="flex justify-center my-24">
               <img src={icon} className="h-20 w-20" />
             </div>
 
-            <p className="text-lg mt-12">
-              Tempomat monitors your <span className="text-purple-500 font-semibold">builds, deployments and pull requests</span>. It integrates directly with your continuous integration service and puts all the info right <span className="text-purple-500 font-semibold">on your Desktop</span>. It does this in the background, is always available and <span className="text-purple-500 font-semibold">saves you time</span> by notifying you when something breaks.
+            <p className="text-3xl mt-12 text-center mb-2">
+              Stop manually checking your build processes.
             </p>
-            <p className="text-4xl my-12 text-center">
-              Stop manually checking your build processes. Focus on what matters.
+            <p className="text-purple-500 text-5xl mb-12 text-center">
+            Focus on what matters
             </p>
             <DownloadButton />
           </div>
@@ -79,7 +96,7 @@ const IndexPage = () => {
                 Access with just a glance
               </p>
               <p className="mb-4">
-                All the data you need to make a decision, <span className="text-purple-500 font-semibold">one click way</span>.
+                All the data you need to make a decision, <span className="text-purple-500 ">one click way</span>.
               </p>
               <ul className="list-disc pl-5">
                 <li className="my-2">CI provider</li>
@@ -104,51 +121,58 @@ const IndexPage = () => {
             </p>
               <ul>
                 <li className="my-2">
-                  <span className="font-semibold text-purple-500">
+                  <span className=" text-purple-500">
                     Buy it once
                 </span>
                 , then it's yours forever.
               </li>
                 <li className="my-2">
-                  It is{" "}
-                  <span className="font-semibold text-purple-500">
-                    Too Fast
+                  Really really{" "}
+                  <span className=" text-purple-500">
+                    fast
                 </span>
-                , because it's native.
+                , it's a native App.
               </li>
                 <li className="my-2">
-                  Receive{" "}
-                  <span className="font-semibold text-purple-500">
-                    Notifications
+                  Sends a{" "}
+                  <span className=" text-purple-500">
+                    notification
                 </span>{" "}
                 on failures or restorations.
               </li>
                 <li className="my-2">
                   
-                  <span className="font-semibold text-purple-500">
-                    Custom Filters
+                  <span className=" text-purple-500">
+                    Custom filtering
                 </span>{" "}
-                using regexes
+                via regex.
               </li>
                 <li className="my-2">
                   Everything is{" "}
-                  <span className="font-semibold text-purple-500">
-                    Locally Stored
+                  <span className=" text-purple-500">
+                    locally stored
                 </span>{" "}
                 in the macOS keychain.
               </li>
                 <li className="my-2">
-                  It's{" "}
-                  <span className="font-semibold text-purple-500">
-                    Beautiful
-                </span>
-                , no other words to describe it.
+                  Designed for{" "}
+                  <span className=" text-purple-500">
+                    simplicity  
+                  </span>
+                , just beautiful.
               </li>
                 <li className="my-2">
-                  <span className="font-semibold text-purple-500">
-                    No Tracking
+                  <span className=" text-purple-500">
+                    No tracking
                 </span>
                 , your data and your privacy are a priority.
+              </li>
+                <li className="my-2">
+                  Made in{" "}
+                  <span className=" text-purple-500">
+                    Germany
+                </span>
+                {" "}🇩🇪
               </li>
               </ul>
             </div>
@@ -167,18 +191,18 @@ const IndexPage = () => {
                 Deeply integrated each API, this allows for fetching of detailed information at dizzying speed.
               </p>
               <p className="">
-              <span className="text-purple-500 font-semibold">No need to wait for slow web interfaces</span> to load only to show you your build has failed.
+              <span className="text-purple-500 ">No need to wait for slow web interfaces</span> to load only to show you your build has failed.
               </p>
             </div>
           </div>
 
           {/* ////////////////// Testimonials ///////////////////////////  */}
-          <div className="text-3xl mt-32 mb-6 text-center">
+          <div className="text-3xl mt-32 mb-12 text-center">
             Still not convinced? Hear it from other devs
           </div>
 
           <h3 className="text-center mb-1 text-2xl text-purple-500">Must have for developers</h3>
-          <div className="text-gray-500">
+          <div className="text-gray-400">
             "One of those tools that you don't realize how convenient it makes life
             until you try it. Works great with CircleCI and saves time having to
             wait and check the build status manually."
@@ -186,7 +210,7 @@ const IndexPage = () => {
           <h3 className="text-center mb-12">srolija</h3>
 
           <h3 className="text-center mb-1 text-2xl text-purple-500">A simple tool that adds so much DX value</h3>
-          <div className="text-gray-500">
+          <div className="text-gray-400">
             "I have no idea why a tool like this has not been published earlier.
             Having a unobtrusive reminder of CI status is extremely useful. While
             email or slack notifications might be great for important build
@@ -200,17 +224,15 @@ const IndexPage = () => {
           <h3 className="text-center mb-12">twgraham</h3>
 
           <h3 className="text-center mb-1 text-2xl text-purple-500">Great tool for monitoring CI workflows</h3>
-          <div className="text-gray-500">
+          <div className="text-gray-400">
             "I've been using CCMenu for a while but that has issues as it only monitors the default branch in CircelCI. I wanted the abiilty to monitor specific named branches such as "release" or "preflight", and also any personal branches such as "foo-*". Tempomat tool totally does all of that!"
           </div>
           <h3 className="text-center mb-12">Nigel1066</h3>
 
-          <div className="text-3xl mt-32 mb-6 text-center">
-            Motivation
-          </div>
-          <p className="mb-6">My name is <a href="https://ospfranco.github.io" className="text-blue-500">Oscar Franco</a>, I work as a team lead. Tempomat came to exist because of the need I had to coordinate work across teams and several devs committing large amounts of code each day. At some point you loose sight of the forest while looking at the trees.</p>
+          <img src={dev} className="h-64 my-32" alt="Dev illustration" />
+          <p className="mb-6">My name is <a href="https://ospfranco.github.io" className="text-blue-500">Oscar Franco</a>, I work as a team lead. Tempomat came to exist because of the need I had to coordinate work across projects, repos and devs. With large amounts of code committed every day, it is particularly important to have an overview of the global state of your team/company/project.</p>
           
-          <p>By using Tempomat I solved my problem, which is the best testament to any product. Hopefully it will save you time and headaches when something goes unnoticed. If you have any question of problem please <a href="mailto:ospfranco@protonmail.com" className="text-blue-500">contact me.</a></p>
+          <p className="mb-12">By using Tempomat I solved my problem, which is the best testament to any product. Hopefully it will save you time and headaches when something goes unnoticed. If you have any question or problem, please, <a href="mailto:ospfranco@protonmail.com" className="text-blue-500">contact me.</a></p>
 
           <DownloadButton />
 
