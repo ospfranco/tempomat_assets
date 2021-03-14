@@ -12,7 +12,7 @@ import controlCenter from "../images/controlCenter.svg";
 import background from "../images/background.jpg";
 import productHunt from "../images/productHunt.png";
 import desktop from "../images/desktop.svg";
-import icon from "../images/icon.png";
+import icon from "../images/Icon.png";
 
 const IndexPage = () => {
   const [PHVisible, setPHVisible] = useState(true);
