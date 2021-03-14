@@ -2,19 +2,17 @@ import React, { useState } from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { DownloadButton } from "../components/DownloadButtons";
-import TwitterBadge from "../components/TwitterBadge";
-
 import providers from "../images/providers.png";
-import feature1 from "../images/feature1.webp";
 import feature2 from "../images/feature2.webp";
 import tempo from "../images/tempo.webp";
 import apple from "../images/Apple.svg";
 import bluetooth from "../images/bluetooth.svg";
 import wifi from "../images/wifi.svg";
 import controlCenter from "../images/controlCenter.svg";
-import background from "../images/background.webp";
+import background from "../images/background.jpg";
 import productHunt from "../images/productHunt.png";
 import desktop from "../images/desktop.svg";
+import icon from "../images/icon.png";
 
 const IndexPage = () => {
   const [PHVisible, setPHVisible] = useState(true);
@@ -26,11 +24,11 @@ const IndexPage = () => {
         description="CircleCI, Travis CI, Github, AppCenter, Bitrise on your macOS desktop"
       />
 
-      <div className="flex h-6 border-b border-gray-300 shadow bg-gray-200 items-center px-4">
+      <div className="flex h-6 border-b border-gray-300 shadow bg-gray-200 items-center px-6">
         <img src={apple} className="h-4" alt="apple logo" />
         <div className="font-semibold pl-4 flex-1 font-sans">
           Tempomat
-      </div>
+        </div>
         <div className="relative w-3 h-5 m-4">
           <img src={tempo} className="previewImage" alt="Preview of Tempomat" />
         </div>
@@ -43,28 +41,30 @@ const IndexPage = () => {
       </div>
 
       <div className="flex flex-col items-center">
-        <div className="absolute invisible xl:visible w-1/2 flex flex-col items-center" style={{ left: 40, top: 200 }}>
-          <div>
-            <p className="font-bold text-white text-4xl mb-4" style={{ textShadow: '2px 2px 15px #333' }}>
+        <div className="absolute invisible xl:visible w-1/2 px-4 flex flex-col items-center" style={{ left: 40, top: '15%' }}>
+            <p className="text-4xl text-white">
               CI builds and deployments on your desktop
             </p>
-            <p className="text-lg text-white">
-              Tempomat is a macOS menu bar app that polls your continuous integration system and/or deployments, condenses the information and notifies you when something breaks. <br />Your time is valuable, don't waste it waiting for slow web apps.
-            </p>
-          </div>
-
-          <DownloadButton />
         </div>
         <img src={background} className="w-full object-cover" style={{ minHeight: 600 }} alt="background" />
         <div className="px-4 w-full lg:w-3/4 xl:w-2/3 flex flex-col mb-20">
           <div className="xl:hidden flex flex-col items-center">
-            <p className="font-bold text-4xl mb-4">
+            <p className="text-4xl mb-4 mt-12 text-center">
               CI builds and deployments on your desktop
-          </p>
-            <p className="text-lg">
-              Tempomat is a macOS menu bar app that <span className="text-yellow-500">polls your continuous integration</span> system and/or deployments, condenses the information and notifies you when <span className="text-red-500">something breaks</span>. <br /><br /> <span className="text-green-500">Your time is valuable</span>, don't waste it waiting for slow web apps.
-          </p>
+            </p>
+          </div>
 
+          <div className="flex flex-col align-center mt-20">
+            <div className="flex justify-center my-12">
+              <img src={icon} className="h-20 w-20" />
+            </div>
+
+            <p className="text-lg mt-12">
+              Tempomat monitors your <span className="text-purple-500 font-semibold">builds, deployments and pull requests</span>. It integrates directly with your continuous integration service and puts all the info right <span className="text-purple-500 font-semibold">on your Desktop</span>. It does this in the background, is always available and <span className="text-purple-500 font-semibold">saves you time</span> by notifying you when something breaks.
+            </p>
+            <p className="text-4xl my-12 text-center">
+              Stop manually checking your build processes. Focus on what matters.
+            </p>
             <DownloadButton />
           </div>
 
@@ -72,13 +72,16 @@ const IndexPage = () => {
           {/* <TwitterBadge /> */}
 
           {/* ////////////////// Second item ///////////////////////////  */}
-          <div className="flex flex-col lg:flex-row items-center justify-center mt-24 xl:mt-2">
+          <div className="flex flex-col lg:flex-row items-center justify-center mt-32">
             <img src={desktop} className="lg:h-96 lg:w-1/2 object-contain" alt="feature 1" />
             <div className="lg:w-1/2 lg:pl-12">
-              <p className="font-bold text-3xl mb-6">
+              <p className="text-3xl mb-2">
                 Access with just a glance
               </p>
-              <ul>
+              <p className="mb-4">
+                All the data you need to make a decision, <span className="text-purple-500 font-semibold">one click way</span>.
+              </p>
+              <ul className="list-disc pl-5">
                 <li className="my-2">CI provider</li>
                 <li className="my-2">Build status</li>
                 <li className="my-2">Repository information</li>
@@ -94,18 +97,24 @@ const IndexPage = () => {
 
 
           {/* ////////////////// Third item ///////////////////////////  */}
-          <div className="flex flex-col-reverse flex-reverse lg:flex-row items-center mt-24">
+          <div className="flex flex-col-reverse flex-reverse lg:flex-row items-center mt-32">
             <div className="lg:w-1/2 lg:mr-8">
-              <p className="font-bold text-3xl mb-6">
-                It's awesome
+              <p className="text-3xl mb-6">
+                Crafted with love
             </p>
               <ul>
+                <li className="my-2">
+                  <span className="font-semibold text-purple-500">
+                    Buy it once
+                </span>
+                , then it's yours forever.
+              </li>
                 <li className="my-2">
                   It is{" "}
                   <span className="font-semibold text-purple-500">
                     Too Fast
                 </span>
-                , it's native macOS app.
+                , because it's native.
               </li>
                 <li className="my-2">
                   Receive{" "}
@@ -115,7 +124,7 @@ const IndexPage = () => {
                 on failures or restorations.
               </li>
                 <li className="my-2">
-                  Create your own{" "}
+                  
                   <span className="font-semibold text-purple-500">
                     Custom Filters
                 </span>{" "}
@@ -124,42 +133,23 @@ const IndexPage = () => {
                 <li className="my-2">
                   Everything is{" "}
                   <span className="font-semibold text-purple-500">
-                    Securely Stored
+                    Locally Stored
                 </span>{" "}
                 in the macOS keychain.
               </li>
                 <li className="my-2">
-                  Look at it! It's{" "}
+                  It's{" "}
                   <span className="font-semibold text-purple-500">
                     Beautiful
                 </span>
                 , no other words to describe it.
               </li>
                 <li className="my-2">
-                  Trigger a{" "}
                   <span className="font-semibold text-purple-500">
-                    Rebuild
-                </span>
-                , right from your desktop.
-              </li>
-                <li className="my-2">
-                  <span className="font-semibold text-purple-500">
-                    No tracking
+                    No Tracking
                 </span>
                 , your data and your privacy are a priority.
               </li>
-                {/* <li className="my-2">
-                  completely {" "}
-                  <span className="font-semibold text-purple-500 lowercase">
-                    FREE
-                </span>
-                </li> */}
-                {/* <li className="my-2">
-                  <span className="font-semibold">
-                    OPEN SOURCE
-                </span>
-                , you can contribute to it
-              </li> */}
               </ul>
             </div>
 
@@ -167,31 +157,36 @@ const IndexPage = () => {
           </div>
 
           {/* ////////////////// Fourth item ///////////////////////////  */}
-          <div className="flex flex-col lg:flex-row items-center mt-20">
-            <img src={providers} className="w-64 lg:h-80 lg:w-1/3 object-contain self-center" alt="providers" />
-            <div className="lg:w-2/3 lg:ml-24">
-              <div className="font-bold text-3xl p-4">
-                Supports many continuous providers
+          <div className="flex flex-col lg:flex-row items-center mt-32">
+            <img src={providers} className="w-64 lg:h-80 lg:w-1/2 lg:p-8 object-contain self-center" alt="providers" />
+            <div className="lg:w-1/2 p-8">
+              <div className="text-3xl mb-6">
+                Works with your CI
             </div>
-              <p className="p-4">
-                Tempomat integrates tightly with each's service API, this allows for fetching of detailed information and dizzying speed, no need to wait for slow web interfaces to download only to show you your build has failed... yuck!
-            </p>
+              <p className="mb-4">
+                Deeply integrated each API, this allows for fetching of detailed information at dizzying speed.
+              </p>
+              <p className="">
+              <span className="text-purple-500 font-semibold">No need to wait for slow web interfaces</span> to load only to show you your build has failed.
+              </p>
             </div>
           </div>
 
           {/* ////////////////// Testimonials ///////////////////////////  */}
-          <div className="font-bold text-3xl mt-20 mb-6">
-            User Reviews
-        </div>
-          <h3 className="mb-1 font-semibold"><span className="text-green-400 text-2xl">5</span><span className="text-lg text-gray-600">/5</span> Must have for developers </h3>
-          <div className="italic">
+          <div className="text-3xl mt-32 mb-6 text-center">
+            Still not convinced? Hear it from other devs
+          </div>
+
+          <h3 className="text-center mb-1 text-2xl text-purple-500">Must have for developers</h3>
+          <div className="text-gray-500">
             "One of those tools that you don't realize how convenient it makes life
             until you try it. Works great with CircleCI and saves time having to
-            wait and check the build status manually." - srolija
-        </div>
+            wait and check the build status manually."
+          </div>
+          <h3 className="text-center mb-12">srolija</h3>
 
-          <h3 className="mb-1 mt-8 font-semibold"><span className="text-green-400 text-2xl">5</span><span className="text-lg text-gray-600">/5</span> A simple tool that adds so much DX value</h3>
-          <div className="italic">
+          <h3 className="text-center mb-1 text-2xl text-purple-500">A simple tool that adds so much DX value</h3>
+          <div className="text-gray-500">
             "I have no idea why a tool like this has not been published earlier.
             Having a unobtrusive reminder of CI status is extremely useful. While
             email or slack notifications might be great for important build
@@ -200,16 +195,24 @@ const IndexPage = () => {
             much faster than going to a bookmarked CI page in your browser,
             finding the build, and waiting for slow interfaces to load. Would
             easily recommend to anyone using CI on your projects - especially
-            CircleCI." - twgraham
-        </div>
+            CircleCI."
+          </div>
+          <h3 className="text-center mb-12">twgraham</h3>
 
-          <h3 className="mb-1 mt-8 font-semibold"><span className="text-green-400 text-2xl">5</span><span className="text-lg text-gray-600">/5</span> Great tool for monitoring CI workflows</h3>
-          <div className="italic">
-            "I've been using CCMenu for a while but that has issues as it only monitors the default branch in CircelCI. I wanted the abiilty to monitor specific named branches such as "release" or "preflight", and also any personal branches such as "foo-*". Tempomat tool totally does all of that!" - Nigel1066
-        </div>
+          <h3 className="text-center mb-1 text-2xl text-purple-500">Great tool for monitoring CI workflows</h3>
+          <div className="text-gray-500">
+            "I've been using CCMenu for a while but that has issues as it only monitors the default branch in CircelCI. I wanted the abiilty to monitor specific named branches such as "release" or "preflight", and also any personal branches such as "foo-*". Tempomat tool totally does all of that!"
+          </div>
+          <h3 className="text-center mb-12">Nigel1066</h3>
+
+          <div className="text-3xl mt-32 mb-6 text-center">
+            Motivation
+          </div>
+          <p className="mb-6">My name is <a href="https://ospfranco.github.io" className="text-blue-500">Oscar Franco</a>, I work as a team lead. Tempomat came to exist because of the need I had to coordinate work across teams and several devs committing large amounts of code each day. At some point you loose sight of the forest while looking at the trees.</p>
+          
+          <p>By using Tempomat I solved my problem, which is the best testament to any product. Hopefully it will save you time and headaches when something goes unnoticed. If you have any question of problem please <a href="mailto:ospfranco@protonmail.com" className="text-blue-500">contact me.</a></p>
 
           <DownloadButton />
-          {/* <TwitterBadge /> */}
 
         </div>
 

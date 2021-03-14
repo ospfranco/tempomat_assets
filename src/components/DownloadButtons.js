@@ -27,7 +27,7 @@ export const DownloadButton = () => {
         onClick={triggerCheckout}
         className="bg-blue-500 text-white font-bold py-2 px-8 border-b-4 hover:border-b-2 hover:border-t-2 border-blue-700 hover:border-blue rounded w-64 flex items-center justify-center"
       >
-        <img src={appleWhite} className="h-5 mr-3" alt="apple icon" /> Buy
+        <img src={appleWhite} className="h-5 mr-3" alt="apple icon" /> Buy forever (10€)
       </button>
     </div>
   )
