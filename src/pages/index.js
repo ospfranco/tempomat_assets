@@ -232,6 +232,8 @@ const IndexPage = () => {
           <img src={dev} className="h-64 my-32" alt="Dev illustration" />
           <p className="mb-6">My name is <a href="https://ospfranco.github.io" className="text-blue-500">Oscar Franco</a>, I work as a team lead. Tempomat came to exist because of the need I had to coordinate work across projects, repos and devs. With large amounts of code committed every day, it is particularly important to have an overview of the global state of your team/company/project.</p>
           
+          <p className="mb-6">I'm not giving the product away because I put a lot of time and effort iterating on it, I also think that if you need this, it will save you so much time and wasted effort that it is worth more than what I ask for it. By purchasing the product you help me keep it alive.</p>
+          
           <p className="mb-12">By using Tempomat I solved my problem, which is the best testament to any product. Hopefully it will save you time and headaches when something goes unnoticed. If you have any question or problem, please, <a href="mailto:ospfranco@protonmail.com" className="text-blue-500">contact me.</a></p>
 
           <DownloadButton />
