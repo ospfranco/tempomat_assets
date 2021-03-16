@@ -30,13 +30,13 @@ const IndexPage = () => {
         <div className="pl-4 font-sans font-semibold text-sm">
           Tempomat
         </div>
-        <div className="pl-6 font-sans text-sm">
+        <div className="pl-6 font-sans text-sm hidden md:block">
           File
         </div>
-        <div className="pl-6 font-sans text-sm">
+        <div className="pl-6 font-sans text-sm hidden md:block">
           Edit
         </div>
-        <div className="pl-6 font-sans text-sm">
+        <div className="pl-6 font-sans text-sm hidden md:block">
           Help
         </div>
         <div className="flex-1"></div>
@@ -52,21 +52,26 @@ const IndexPage = () => {
       </div>
 
       <div className="flex flex-col items-center">
-        <div className="absolute invisible xl:visible w-1/2 px-4 flex flex-col items-center" style={{ left: 40, top: '15%' }}>
+        <div className="absolute invisible xl:visible w-1/2 px-4 flex flex-col items-center" style={{ left: 0, top: '25%' }}>
             <p className="text-4xl text-white">
-              CI builds and deployments on your desktop
+              CI builds and deployments
+            </p>
+            <p className="text-5xl text-white">
+              on your desktop
             </p>
         </div>
         <img src={background} className="w-full object-cover" style={{ minHeight: 600 }} alt="background" />
         <div className="px-4 w-full lg:w-3/4 xl:w-2/3 flex flex-col mb-20">
           <div className="xl:hidden flex flex-col items-center">
-            <p className="text-4xl mb-4 mt-12 text-center">
-              CI builds and deployments on your desktop
+            <p className="text-4xl mb-2 mt-12 text-center">
+              CI builds and deployments
+            </p>
+            <p className="text-5xl mb-4 text-center">
+              on your desktop
             </p>
           </div>
 
-          <div className="flex flex-col align-center mt-20">
-            
+          <div className="flex flex-col align-center mt-2 md:mt-20">
 
             <p className="text-lg mt-12">
               Tempomat monitors your <span className="text-purple-500 ">builds, deployments</span> and <span className="text-purple-500 ">pull requests</span>. It integrates directly with your continuous integration service and puts all the info right <span className="text-purple-500 ">on your Desktop</span>. It does this in the background, is always available and <span className="text-purple-500 ">saves you time</span> by notifying you when something breaks.
@@ -201,15 +206,15 @@ const IndexPage = () => {
             Still not convinced? Hear it from other devs
           </div>
 
-          <h3 className="text-center mb-1 text-2xl text-purple-500">Must have for developers</h3>
+          <h3 className="mb-1 text-2xl text-purple-500">Must have for developers</h3>
           <div className="text-gray-400">
             "One of those tools that you don't realize how convenient it makes life
             until you try it. Works great with CircleCI and saves time having to
             wait and check the build status manually."
           </div>
-          <h3 className="text-center mb-12">srolija</h3>
+          <h3 className="mb-12">srolija</h3>
 
-          <h3 className="text-center mb-1 text-2xl text-purple-500">A simple tool that adds so much DX value</h3>
+          <h3 className="mb-1 text-2xl text-purple-500">A simple tool that adds so much DX value</h3>
           <div className="text-gray-400">
             "I have no idea why a tool like this has not been published earlier.
             Having a unobtrusive reminder of CI status is extremely useful. While
@@ -221,13 +226,13 @@ const IndexPage = () => {
             easily recommend to anyone using CI on your projects - especially
             CircleCI."
           </div>
-          <h3 className="text-center mb-12">twgraham</h3>
+          <h3 className="mb-12">twgraham</h3>
 
-          <h3 className="text-center mb-1 text-2xl text-purple-500">Great tool for monitoring CI workflows</h3>
+          <h3 className="mb-1 text-2xl text-purple-500">Great tool for monitoring CI workflows</h3>
           <div className="text-gray-400">
             "I've been using CCMenu for a while but that has issues as it only monitors the default branch in CircelCI. I wanted the abiilty to monitor specific named branches such as "release" or "preflight", and also any personal branches such as "foo-*". Tempomat tool totally does all of that!"
           </div>
-          <h3 className="text-center mb-12">Nigel1066</h3>
+          <h3 className="mb-12">Nigel1066</h3>
 
           <img src={dev} className="h-64 my-32" alt="Dev illustration" />
           <p className="mb-6">My name is <a href="https://ospfranco.github.io" className="text-blue-500">Oscar Franco</a>, I work as a team lead. Tempomat came to exist because of the need I had to coordinate work across projects, repos and devs. With large amounts of code committed every day, it is particularly important to have an overview of the global state of your team/company/project.</p>
