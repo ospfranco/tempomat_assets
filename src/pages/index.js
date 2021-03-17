@@ -52,7 +52,7 @@ const IndexPage = () => {
       </div>
 
       <div className="flex flex-col items-center">
-        <div className="absolute invisible xl:visible w-1/2 px-4 flex flex-col items-center" style={{ left: 0, top: '25%' }}>
+        <div className="absolute invisible xl:visible w-1/2 px-4 flex flex-col items-center" style={{ left: 0, top: 200 }}>
             <p className="text-4xl text-white">
               CI builds and deployments
             </p>
