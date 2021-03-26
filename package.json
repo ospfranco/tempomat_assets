@@ -1,7 +1,7 @@
 {
-  "name": "tempomat-web-site",
+  "name": "cidemon-web-site",
   "private": true,
-  "description": "tempomat's web site",
+  "description": "cidemon's web site",
   "version": "0.1.0",
   "author": "Oscar Franco <ospfranco@protonmail.com>",
   "dependencies": {

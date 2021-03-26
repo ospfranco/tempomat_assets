@@ -16,7 +16,7 @@ let stripe = Stripe(stripeKey);
 //   "isBase64Encoded": "A boolean flag to indicate if the applicable request payload is Base64-encode"
 // }
 exports.handler = async function(event, context) {
-  const success_url = __DEV__ ? 'http://localhost:8888/purchaseOk?session_id={CHECKOUT_SESSION_ID}' : 'https://tempomat.dev/purchaseOk?session_id={CHECKOUT_SESSION_ID}';
+  const success_url = __DEV__ ? 'http://localhost:8888/purchaseOk?session_id={CHECKOUT_SESSION_ID}' : 'https://cidemon.dev/purchaseOk?session_id={CHECKOUT_SESSION_ID}';
   let session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
     line_items: [
@@ -24,7 +24,7 @@ exports.handler = async function(event, context) {
         price_data: {
           currency: 'eur',
           product_data: {
-            name: 'Tempomat License'
+            name: 'cidemon License'
           },
           unit_amount: 1000
         },
@@ -33,7 +33,7 @@ exports.handler = async function(event, context) {
     ],
     mode: 'payment',
     success_url,
-    cancel_url: 'https://tempomat.dev/purchase_fail'
+    cancel_url: 'https://cidemon.dev/purchase_fail'
   });
 
 

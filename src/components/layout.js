@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
         className="border-t flex flex-col items-center justify-center p-4 border-purple-200"
       >
         <div className="font-semibold">
-          Tempomat
+          CI Demon
         </div>
         <div className="text-sm mb-4">
           2021

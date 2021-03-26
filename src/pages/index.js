@@ -28,7 +28,7 @@ const IndexPage = () => {
       <div className="flex h-6 border-b border-gray-300 shadow bg-gray-200 items-center px-6">
         <img src={apple} className="h-4" alt="apple logo" />
         <div className="pl-4 font-sans font-semibold text-sm">
-          Tempomat
+          cidemon
         </div>
         <div className="pl-6 font-sans text-sm hidden md:block">
           File
@@ -41,7 +41,7 @@ const IndexPage = () => {
         </div>
         <div className="flex-1"></div>
         <div className="relative w-3 h-5 m-4">
-          <img src={tempo} className="previewImage" alt="Preview of Tempomat" />
+          <img src={tempo} className="previewImage" alt="Preview of cidemon" />
         </div>
         <img src={bluetooth} className="hidden md:block h-4 px-3" alt="bluetooth icon" />
         <img src={wifi} className="h-3 px-3 hidden md:block " alt="wifi icon" />
@@ -74,7 +74,7 @@ const IndexPage = () => {
           <div className="flex flex-col align-center mt-2 md:mt-20">
 
             <p className="text-lg mt-12">
-              Tempomat monitors your <span className="text-purple-500 ">builds, deployments</span> and <span className="text-purple-500 ">pull requests</span>. It integrates directly with your continuous integration service and puts all the info right <span className="text-purple-500 ">on your Desktop</span>. It does this in the background, is always available and <span className="text-purple-500 ">saves you time</span> by notifying you when something breaks.
+              cidemon monitors your <span className="text-purple-500 ">builds, deployments</span> and <span className="text-purple-500 ">pull requests</span>. It integrates directly with your continuous integration service and puts all the info right <span className="text-purple-500 ">on your Desktop</span>. It does this in the background, is always available and <span className="text-purple-500 ">saves you time</span> by notifying you when something breaks.
             </p>
 
             <div className="flex justify-center my-24">
@@ -230,16 +230,16 @@ const IndexPage = () => {
 
           <h3 className="mb-1 text-2xl text-purple-500">Great tool for monitoring CI workflows</h3>
           <div className="text-gray-400">
-            "I've been using CCMenu for a while but that has issues as it only monitors the default branch in CircelCI. I wanted the abiilty to monitor specific named branches such as "release" or "preflight", and also any personal branches such as "foo-*". Tempomat tool totally does all of that!"
+            "I've been using CCMenu for a while but that has issues as it only monitors the default branch in CircelCI. I wanted the abiilty to monitor specific named branches such as "release" or "preflight", and also any personal branches such as "foo-*". cidemon tool totally does all of that!"
           </div>
           <h3 className="mb-12">Nigel1066</h3>
 
           <img src={dev} className="h-64 my-32" alt="Dev illustration" />
-          <p className="mb-6">My name is <a href="https://ospfranco.github.io" className="text-blue-500">Oscar Franco</a>, I work as a team lead. Tempomat came to exist because of the need I had to coordinate work across projects, repos and devs. With large amounts of code committed every day, it is particularly important to have an overview of the global state of your team/company/project.</p>
+          <p className="mb-6">My name is <a href="https://ospfranco.github.io" className="text-blue-500">Oscar Franco</a>, I work as a team lead. cidemon came to exist because of the need I had to coordinate work across projects, repos and devs. With large amounts of code committed every day, it is particularly important to have an overview of the global state of your team/company/project.</p>
           
           <p className="mb-6">I'm not giving the product away because I put a lot of time and effort iterating on it, I also think that if you need this, it will save you so much time and wasted effort that it is worth more than what I ask for it. By purchasing the product you help me keep it alive.</p>
           
-          <p className="mb-12">By using Tempomat I solved my problem, which is the best testament to any product. Hopefully it will save you time and headaches when something goes unnoticed. If you have any question or problem, please, <a href="mailto:ospfranco@protonmail.com" className="text-blue-500">contact me.</a></p>
+          <p className="mb-12">By using cidemon I solved my problem, which is the best testament to any product. Hopefully it will save you time and headaches when something goes unnoticed. If you have any question or problem, please, <a href="mailto:ospfranco@protonmail.com" className="text-blue-500">contact me.</a></p>
 
           <DownloadButton />
 
@@ -251,12 +251,12 @@ const IndexPage = () => {
         >
 
           <a
-            href="https://www.producthunt.com/posts/tempomat"
+            href="https://www.producthunt.com/posts/cidemon"
             target="_blank"
             rel="noreferrer"
             className="flex items-center"
           >
-            <span className="text-white">Upvote Tempomat on</span>
+            <span className="text-white">Upvote cidemon on</span>
             <img src={productHunt} className="w-32 h-12" alt="product hunt logo" />
 
           </a>

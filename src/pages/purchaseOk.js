@@ -57,14 +57,14 @@ const PurchaseOk = (props) => {
           </div>
 
           <a 
-            href="https://www.dropbox.com/s/5ihlm27s5g5b7sj/tempomat.zip?dl=1"
+            href="https://www.dropbox.com/s/5ihlm27s5g5b7sj/cidemon.zip?dl=1"
             className="bg-blue-500 text-white font-bold py-2 px-8 border-b-4 hover:border-b-2 hover:border-t-2 border-blue-700 hover:border-blue rounded m-10"
           >
             Download
           </a>
 
           <div className="text-center py-4">
-            With your purchase I can continue to enhance and support Tempomat, if you have any questions or need help, just send me an <a href="mailto:ospfranco@protonmail.com" className="font-bold text-blue-500">email</a>
+            With your purchase I can continue to enhance and support cidemon, if you have any questions or need help, just send me an <a href="mailto:ospfranco@protonmail.com" className="font-bold text-blue-500">email</a>
           </div>
     
           <Link to="/" className="text-blue-500">Go back to the homepage</Link>
