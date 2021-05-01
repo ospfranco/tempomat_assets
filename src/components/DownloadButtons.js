@@ -20,13 +20,12 @@ export const DownloadButton = () => {
 
   return (
     <div className="flex flex-col md:flex-row mt-2 mb-12">
-      <href
-        a="https://apps.apple.com/de/app/ci-demon/id1560355863?mt=12"
-        // onClick={triggerCheckout}
+      <a
+        href="https://apps.apple.com/de/app/ci-demon/id1560355863?mt=12"
         className="bg-black text-white font-bold py-2 px-8 rounded w-64 flex items-center justify-center"
       >
         <img src={appleWhite} className="h-5 mr-3" alt="apple icon" /> Buy
-      </href>
+      </a>
     </div>
   )
 }

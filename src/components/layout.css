@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 html {
-  @apply text-gray-800 font-sans;
+  @apply text-gray-700 font-sans;
   font-weight: 300;
 }
 

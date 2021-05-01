@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { DownloadButton } from "../components/DownloadButtons";
@@ -181,7 +181,7 @@ const IndexPage = () => {
           </div>
 
           {/* ////////////////// Testimonials ///////////////////////////  */}
-          <div className="text-3xl mt-32 mb-12 text-center">
+          <div className="text-3xl mt-32 mb-8">
             Still not convinced? Hear it from other devs
           </div>
 
@@ -191,7 +191,7 @@ const IndexPage = () => {
             until you try it. Works great with CircleCI and saves time having to
             wait and check the build status manually."
           </div>
-          <h3 className="mb-12">srolija</h3>
+          <h3 className="mb-12 font-bold">srolija</h3>
 
           <h3 className="mb-1 text-2xl text-purple-500">A simple tool that adds so much DX value</h3>
           <div>
@@ -205,20 +205,25 @@ const IndexPage = () => {
             easily recommend to anyone using CI on your projects - especially
             CircleCI."
           </div>
-          <h3 className="mb-12">twgraham</h3>
+          <h3 className="mb-12 font-bold">twgraham</h3>
 
           <h3 className="mb-1 text-2xl text-purple-500">Great tool for monitoring CI workflows</h3>
           <div>
             "I've been using CCMenu for a while but that has issues as it only monitors the default branch in CircelCI. I wanted the abiilty to monitor specific named branches such as "release" or "preflight", and also any personal branches such as "foo-*". cidemon tool totally does all of that!"
           </div>
-          <h3 className="mb-12">Nigel1066</h3>
+          <h3 className="mb-12 font-bold">Nigel1066</h3>
 
           <img src={dev} className="h-64 my-32" alt="Dev illustration" />
+
+          <div className="text-3xl mb-8">
+            About me
+          </div>
           <p className="mb-6">My name is <a href="https://ospfranco.github.io" className="text-blue-500">Oscar Franco</a>, I work as a team lead. CI Demon came to exist because of the need I had to coordinate work across projects, repos and devs. With large amounts of code committed every day, it is particularly important to have an overview of the global state of your team/company/project.</p>
           
           <p className="mb-6">I'm not giving the product away because I put a lot of time and effort iterating on it, I also think that if you need this, it will save you so much time and wasted effort that it is worth more than what I ask for it. By purchasing the product you help me keep it alive.</p>
           
-          <p className="mb-12">By using cidemon I solved my problem, which is the best testament to any product. Hopefully it will save you time and headaches when something goes unnoticed. If you have any question or problem, please, <a href="mailto:ospfranco@protonmail.com" className="text-blue-500">contact me.</a></p>
+          <p className="mb-6">Hopefully it will save you time and headaches when something goes unnoticed.</p>
+          <p className="mb-12">If you have any question or problem, please, <a href="mailto:ospfranco@protonmail.com" className="text-blue-500">contact me.</a></p>
 
           <DownloadButton />
         </div>
