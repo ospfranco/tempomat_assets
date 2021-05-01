@@ -10,14 +10,10 @@ import bluetooth from "../images/bluetooth.svg";
 import wifi from "../images/wifi.svg";
 import controlCenter from "../images/controlCenter.svg";
 import background from "../images/background.jpg";
-import productHunt from "../images/productHunt.png";
 import desktop from "../images/desktop.svg";
-import icon from "../images/Icon.png";
 import dev from "../images/dev.svg";
 
 const IndexPage = () => {
-  const [PHVisible, setPHVisible] = useState(true);
-
   return (
     <Layout>
       <SEO
@@ -225,11 +221,8 @@ const IndexPage = () => {
           <p className="mb-12">By using cidemon I solved my problem, which is the best testament to any product. Hopefully it will save you time and headaches when something goes unnoticed. If you have any question or problem, please, <a href="mailto:ospfranco@protonmail.com" className="text-blue-500">contact me.</a></p>
 
           <DownloadButton />
-
         </div>
-
       </div>
-
     </Layout>
   );
 }

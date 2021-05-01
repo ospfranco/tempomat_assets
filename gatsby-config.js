@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `CI Demon: monitor CI builds and website health checks`,
-    description: `Native macOS app for monitoring continuous integration systems`,
-    keywords: [`Continuous Integration`, `health check`, `notification`, `github`, `menu bar`, `circleci`, `ping`],
-    siteUrl: `https://cidemon.github.io`,
+    title: `CI Demon: Builds and deployments in your desktop`,
+    description: `macOS app for monitoring continuous integration systems`,
+    keywords: [`CI`, `notifications`, `notification`, `github`, `gitlab`, `menu bar`, `status bar`, `circleci`],
+    siteUrl: `https://ospfranco.github.io/cidemon`,
     author: `Oscar Franco`,
   },
+  pathPrefix: `/cidemon`,
   plugins: [
     {
       resolve: `gatsby-plugin-react-helmet`
