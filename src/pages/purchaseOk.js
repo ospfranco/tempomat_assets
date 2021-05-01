@@ -34,7 +34,7 @@ const PurchaseOk = (props) => {
     return (
       <div className="h-screen flex flex-col justify-center items-center">
         <SEO title="Purchase error" />
-        <img src={errorSVG} className="h-64"/>
+        <img alt="error" src={errorSVG} className="h-64"/>
         <div className="p-4 md:w-1/2 flex flex-col items-center">
           <div className="font-bold text-center my-4">
             Oh cr*p, it seems the servers cannot verify your purchase, please contact <a href="mailto:ospfranco@protonmail.com" className="font-bold text-blue-500">ospfranco@protonmail.com</a>
@@ -51,7 +51,7 @@ const PurchaseOk = (props) => {
         <SEO title="Thank you for you purchase!" />
         <div className="p-4 md:w-1/2 flex flex-col items-center">
 
-          <img src={successSVG} className="h-64"/>
+          <img alt="success" src={successSVG} className="h-64"/>
           <div className="font-bold py-4 text-lg">
             Thank you for your purchase!
           </div>

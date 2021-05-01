@@ -52,40 +52,23 @@ const IndexPage = () => {
       </div>
 
       <div className="flex flex-col items-center">
-        <div className="absolute invisible xl:visible w-1/2 px-4 flex flex-col items-center" style={{ left: 0, top: 200 }}>
-            <p className="text-4xl text-white">
-              CI builds and deployments
-            </p>
-            <p className="text-5xl text-white">
-              on your desktop
-            </p>
+        <div className="absolute invisible xl:visible w-1/2 px-4 flex flex-col items-center justify-center text-4xl text-white" style={{ left: 0, height: 600 }}>
+          CI builds and deployments on your desktop
         </div>
-        <img src={background} className="w-full object-cover" style={{ minHeight: 600 }} alt="background" />
+        <img src={background} className="w-full object-cover" style={{ height: 600 }} alt="background" />
         <div className="px-4 w-full lg:w-3/4 xl:w-2/3 flex flex-col mb-20">
-          <div className="xl:hidden flex flex-col items-center">
-            <p className="text-4xl mb-2 mt-12 text-center">
-              CI builds and deployments
-            </p>
-            <p className="text-5xl mb-4 text-center">
-              on your desktop
+          <div className="xl:hidden flex flex-col">
+            <p className="text-4xl mb-2 mt-12">
+              CI builds and deployments on your desktop
             </p>
           </div>
 
-          <div className="flex flex-col align-center mt-2 md:mt-20">
-
+          <div className="flex flex-col mt-2">
             <p className="text-lg mt-12">
-              cidemon monitors your <span className="text-purple-500 ">builds, deployments</span> and <span className="text-purple-500 ">pull requests</span>. It integrates directly with your continuous integration service and puts all the info right <span className="text-purple-500 ">on your Desktop</span>. It does this in the background, is always available and <span className="text-purple-500 ">saves you time</span> by notifying you when something breaks.
+              CI Demon monitors your <span className="text-purple-500 ">builds and deployments</span>. It integrates directly with your continuous integration service and <span className="text-purple-500">sits on the macOS status bar</span>. Completely invisible in the background, is always available and notifies you when something breaks.
             </p>
-
-            <div className="flex justify-center my-24">
-              <img src={icon} className="h-20 w-20" />
-            </div>
-
-            <p className="text-3xl mt-12 text-center mb-2">
-              Stop manually checking your build processes.
-            </p>
-            <p className="text-purple-500 text-5xl mb-12 text-center">
-            Focus on what matters
+            <p className="text-3xl mb-12">
+            Focus on what matters.
             </p>
             <DownloadButton />
           </div>
@@ -207,7 +190,7 @@ const IndexPage = () => {
           </div>
 
           <h3 className="mb-1 text-2xl text-purple-500">Must have for developers</h3>
-          <div className="text-gray-400">
+          <div>
             "One of those tools that you don't realize how convenient it makes life
             until you try it. Works great with CircleCI and saves time having to
             wait and check the build status manually."
@@ -215,7 +198,7 @@ const IndexPage = () => {
           <h3 className="mb-12">srolija</h3>
 
           <h3 className="mb-1 text-2xl text-purple-500">A simple tool that adds so much DX value</h3>
-          <div className="text-gray-400">
+          <div>
             "I have no idea why a tool like this has not been published earlier.
             Having a unobtrusive reminder of CI status is extremely useful. While
             email or slack notifications might be great for important build
@@ -229,13 +212,13 @@ const IndexPage = () => {
           <h3 className="mb-12">twgraham</h3>
 
           <h3 className="mb-1 text-2xl text-purple-500">Great tool for monitoring CI workflows</h3>
-          <div className="text-gray-400">
+          <div>
             "I've been using CCMenu for a while but that has issues as it only monitors the default branch in CircelCI. I wanted the abiilty to monitor specific named branches such as "release" or "preflight", and also any personal branches such as "foo-*". cidemon tool totally does all of that!"
           </div>
           <h3 className="mb-12">Nigel1066</h3>
 
           <img src={dev} className="h-64 my-32" alt="Dev illustration" />
-          <p className="mb-6">My name is <a href="https://ospfranco.github.io" className="text-blue-500">Oscar Franco</a>, I work as a team lead. cidemon came to exist because of the need I had to coordinate work across projects, repos and devs. With large amounts of code committed every day, it is particularly important to have an overview of the global state of your team/company/project.</p>
+          <p className="mb-6">My name is <a href="https://ospfranco.github.io" className="text-blue-500">Oscar Franco</a>, I work as a team lead. CI Demon came to exist because of the need I had to coordinate work across projects, repos and devs. With large amounts of code committed every day, it is particularly important to have an overview of the global state of your team/company/project.</p>
           
           <p className="mb-6">I'm not giving the product away because I put a lot of time and effort iterating on it, I also think that if you need this, it will save you so much time and wasted effort that it is worth more than what I ask for it. By purchasing the product you help me keep it alive.</p>
           
@@ -244,24 +227,6 @@ const IndexPage = () => {
           <DownloadButton />
 
         </div>
-
-        {PHVisible && <div
-          className="rounded w-96 self-center px-4 bg-black fixed flex items-center justify-center"
-          style={{ bottom: 40 }}
-        >
-
-          <a
-            href="https://www.producthunt.com/posts/cidemon"
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center"
-          >
-            <span className="text-white">Upvote cidemon on</span>
-            <img src={productHunt} className="w-32 h-12" alt="product hunt logo" />
-
-          </a>
-          <button className={`text-white absolute`} style={{ right: 15 }} onClick={() => setPHVisible(false)}>X</button>
-        </div>}
 
       </div>
 
