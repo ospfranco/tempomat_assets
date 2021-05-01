@@ -28,7 +28,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths && rm -rf docs && mv ./public ./docs",
     "build:style": "tailwind build src/components/layout.css -o src/components/tailwind.css",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
