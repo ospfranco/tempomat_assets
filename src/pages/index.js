@@ -3,13 +3,12 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { DownloadButton } from "../components/DownloadButtons";
 import providers from "../images/providers.png";
-import feature2 from "../images/feature2.webp";
-import tempo from "../images/tempo.webp";
+import feature2 from "../images/feature2.png";
+import tempo from "../images/tempo.png";
 import apple from "../images/Apple.svg";
 import bluetooth from "../images/bluetooth.svg";
 import wifi from "../images/wifi.svg";
 import controlCenter from "../images/controlCenter.svg";
-import background from "../images/background.jpg";
 import desktop from "../images/desktop.svg";
 import dev from "../images/dev.svg";
 
@@ -24,7 +23,7 @@ const IndexPage = () => {
       <div className="flex h-6 border-b border-gray-300 shadow bg-gray-200 items-center px-6">
         <img src={apple} className="h-4" alt="apple logo" />
         <div className="pl-4 font-sans font-semibold text-sm">
-          cidemon
+          CI Demon
         </div>
         <div className="pl-6 font-sans text-sm hidden md:block">
           File
@@ -48,23 +47,20 @@ const IndexPage = () => {
       </div>
 
       <div className="flex flex-col items-center">
-        <div className="absolute invisible xl:visible w-1/2 px-4 flex flex-col items-center justify-center text-4xl text-white" style={{ left: 0, height: 600 }}>
-          CI builds and deployments on your desktop
+        <div className="invisible xl:visible px-4 flex flex-col justify-center text-4xl bg-gradient-to-b from-purple-500 via-blue-500 to-white w-full" style={{ left: 0, height: 600 }}>
+          
         </div>
-        <img src={background} className="w-full object-cover" style={{ height: 600 }} alt="background" />
+        {/* <img src={background} className="w-full object-cover" style={{ height: 600 }} alt="background" /> */}
         <div className="px-4 w-full lg:w-3/4 xl:w-2/3 flex flex-col mb-20">
-          <div className="xl:hidden flex flex-col">
-            <p className="text-4xl mb-2 mt-12">
+          <div className="flex flex-col">
+            <p className="text-4xl mb-2 mt-12 text-center font-bold">
               CI builds and deployments on your desktop
             </p>
           </div>
 
           <div className="flex flex-col mt-2">
-            <p className="text-lg mt-12">
-              CI Demon monitors your <span className="text-purple-500 ">builds and deployments</span>. It integrates directly with your continuous integration service and <span className="text-purple-500">sits on the macOS status bar</span>. Completely invisible in the background, is always available and notifies you when something breaks.
-            </p>
-            <p className="text-3xl mb-12">
-            Focus on what matters.
+            <p className="text-xl mb-12 text-center text-gray-500">
+              Monitor your <span className="font-bold ">builds and deployments</span>. Connected to your CI service puts all your builds <span className="font-bold">in the macOS status bar</span>
             </p>
             <DownloadButton />
           </div>
@@ -74,25 +70,15 @@ const IndexPage = () => {
 
           {/* ////////////////// Second item ///////////////////////////  */}
           <div className="flex flex-col lg:flex-row items-center justify-center mt-32">
-            <img src={desktop} className="lg:h-96 lg:w-1/2 object-contain" alt="feature 1" />
+            <img src={desktop} className="lg:w-1/2 object-contain bg-gradient-to-r from-yellow-300 to-yellow-500 rounded-lg px-12 py-6" alt="feature 1" />
             <div className="lg:w-1/2 lg:pl-12">
-              <p className="text-3xl mb-2">
-                Access with just a glance
+              <p className="text-3xl mb-2 font-bold">
+                At a glance
               </p>
-              <p className="mb-4">
-                All the data you need to make a decision, <span className="text-purple-500 ">one click way</span>.
+              <p className="mb-4 text-gray-500">
+                All the data you need, build status, committer, branch name, etc. All in a simple design and already loaded when you open the app.
               </p>
-              <ul className="list-disc pl-5">
-                <li className="my-2">CI provider</li>
-                <li className="my-2">Build status</li>
-                <li className="my-2">Repository information</li>
-                <li className="my-2">Branch name</li>
-                <li className="my-2">Build number</li>
-                <li className="my-2">Individual build checks</li>
-                <li className="my-2">Build date</li>
-                <li className="my-2">Trigger rebuilds</li>
-                <li className="my-2">HTTP ping checks</li>
-              </ul>
+              
             </div>
           </div>
 
@@ -100,60 +86,58 @@ const IndexPage = () => {
           {/* ////////////////// Third item ///////////////////////////  */}
           <div className="flex flex-col-reverse flex-reverse lg:flex-row items-center mt-32">
             <div className="lg:w-1/2 lg:mr-8">
-              <p className="text-3xl mb-6">
+            <p className="text-3xl mb-2 font-bold">
                 Crafted with love
             </p>
               <ul>
-                <li className="my-2">
-                  <span className=" text-purple-500">
+                <li className="my-2 text-gray-500">
+                  <span className="text-gray-700 font-semibold">
                     Buy it once
                 </span>
                 , then it's yours forever.
               </li>
-                <li className="my-2">
-                  Really really{" "}
-                  <span className=" text-purple-500">
+                <li className="my-2 text-gray-500">
+                  Really{" "}
+                  <span className="text-gray-700 font-semibold">
                     fast
                 </span>
-                , it's a native App.
+                , it's a native app.
               </li>
-                <li className="my-2">
+                <li className="my-2 text-gray-500">
                   Sends a{" "}
-                  <span className=" text-purple-500">
+                  <span className="text-gray-700 font-semibold">
                     notification
                 </span>{" "}
                 on failures or restorations.
               </li>
-                <li className="my-2">
-                  
-                  <span className=" text-purple-500">
+                <li className="my-2 text-gray-500">
+                  <span className="text-gray-700 font-semibold">
                     Custom filtering
                 </span>{" "}
                 via regex.
               </li>
-                <li className="my-2">
-                  Everything is{" "}
-                  <span className=" text-purple-500">
-                    locally stored
-                </span>{" "}
-                in the macOS keychain.
+                <li className="my-2 text-gray-500">
+                  Locally stored in the {" "}
+                  <span className="text-gray-700 font-semibold">
+                  macOS keychain.
+                </span>
               </li>
-                <li className="my-2">
+                <li className="my-2 text-gray-500">
                   Designed for{" "}
-                  <span className=" text-purple-500">
+                  <span className="text-gray-700 font-semibold">
                     simplicity  
                   </span>
                 , just beautiful.
               </li>
-                <li className="my-2">
-                  <span className=" text-purple-500">
+                <li className="my-2 text-gray-500">
+                  <span className="text-gray-700 font-semibold">
                     No tracking
                 </span>
-                , your data and your privacy are a priority.
+                {" "}at all.
               </li>
-                <li className="my-2">
+                <li className="my-2 text-gray-500">
                   Made in{" "}
-                  <span className=" text-purple-500">
+                  <span className="text-gray-700 font-semibold">
                     Germany
                 </span>
                 {" "}🇩🇪
@@ -161,28 +145,28 @@ const IndexPage = () => {
               </ul>
             </div>
 
-            <img src={feature2} className="lg:h-96 lg:w-1/2 object-contain" alt="feature 2" />
+            <img src={feature2} className="h-96 lg:w-1/2 object-contain p-6 rounded-lg bg-gradient-to-l from-blue-500 to-blue-800" alt="feature 2" />
           </div>
 
           {/* ////////////////// Fourth item ///////////////////////////  */}
           <div className="flex flex-col lg:flex-row items-center mt-32">
-            <img src={providers} className="w-64 lg:h-80 lg:w-1/2 lg:p-8 object-contain self-center" alt="providers" />
+            <img src={providers} className="w-64 lg:h-80 lg:w-1/2 lg:p-8 object-contain self-center bg-gradient-to-b from-green-200 to-green-800 rounded-lg" alt="providers" />
             <div className="lg:w-1/2 p-8">
-              <div className="text-3xl mb-6">
+              <div className="text-3xl font-bold">
                 Works with your CI
             </div>
-              <p className="mb-4">
+              <p className="mb-4 text-gray-500">
                 Deeply integrated each API, this allows for fetching of detailed information at dizzying speed.
               </p>
-              <p className="">
-              <span className="text-purple-500 ">No need to wait for slow web interfaces</span> to load only to show you your build has failed.
+              <p className="text-gray-500">
+              <span className="font-semibold text-gray-800"> Don't wait for slow web interfaces</span> to load only to show you your build has failed.
               </p>
             </div>
           </div>
 
           {/* ////////////////// Testimonials ///////////////////////////  */}
-          <div className="text-3xl mt-32 mb-8">
-            Still not convinced? Hear it from other devs
+          <div className="text-3xl mt-32 mb-8 font-bold">
+            Hear it from other devs
           </div>
 
           <h3 className="mb-1 text-2xl text-purple-500">Must have for developers</h3>

@@ -19,12 +19,12 @@ export const DownloadButton = () => {
   // }
 
   return (
-    <div className="flex flex-col md:flex-row mt-2 mb-12">
+    <div className="flex flex-col md:flex-row mt-2 mb-12 self-center">
       <a
         href="https://apps.apple.com/de/app/ci-demon/id1560355863?mt=12"
-        className="bg-black text-white font-bold py-2 px-8 rounded w-64 flex items-center justify-center"
+        className="bg-gradient-to-r from-purple-500 to-blue-500 text-white py-2 px-8 rounded w-64 h-12 flex items-center justify-center"
       >
-        <img src={appleWhite} className="h-5 mr-3" alt="apple icon" /> Buy
+        <img src={appleWhite} className="h-5 mr-3" alt="apple icon" /> Get on App Store
       </a>
     </div>
   )
