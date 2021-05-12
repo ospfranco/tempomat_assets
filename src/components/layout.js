@@ -7,18 +7,15 @@ import "./layout.css"
 const Layout = ({ children }) => {
   return (
     <>
-      <main className="">
+      <main >
         {children}
       </main>
       
       <footer
-        className="border-t flex flex-col items-center justify-center p-4 border-purple-200"
+        className="border-t flex flex-col items-center justify-center p-4 bg-black"
       >
-        <div className="font-semibold">
+        <div className="font-semibold text-white">
           CI Demon
-        </div>
-        <div className="text-sm mb-4">
-          2021
         </div>
         <Link to="/privacy" alt="Privacy Link" className="text-blue-500">
           Privacy Policy
