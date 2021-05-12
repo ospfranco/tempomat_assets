@@ -47,7 +47,7 @@ const IndexPage = () => {
       </div>
 
       <div className="flex flex-col items-center">
-        <div className="invisible xl:visible px-4 flex flex-col justify-center text-4xl bg-gradient-to-b from-purple-500 via-blue-500 to-white w-full" style={{ left: 0, height: 600 }}>
+        <div className="px-4 flex flex-col justify-center text-4xl bg-gradient-to-b from-purple-500 via-blue-500 to-white w-full" style={{ left: 0, height: 600 }}>
           
         </div>
         {/* <img src={background} className="w-full object-cover" style={{ height: 600 }} alt="background" /> */}
